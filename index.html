@@ -20,8 +20,8 @@
     <!-- ===== fancybox ===== -->
     <link rel="stylesheet" href="./assets/plugins/fancybox/css/jquery.fancybox.min.css" />
   </head>
-    
   <body>
+
     <!-- ===== bootstrap ===== -->
     <script src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -44,5 +44,66 @@
     <!-- ===== panzoom ===== -->
     <script src="./assets/plugins/panzoom/panzoom.min.js"></script>
 
+    <!-- ===== LOGIC RUNTIME INITIALIZATIONS ===== -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        
+        // A. Run WOW Animations
+        try {
+          new WOW({ boxClass: 'wow', animateClass: 'animate__animated', offset: 60 }).init();
+        } catch(e) { console.error("WOW failed:", e); }
+
+        // B. Run Counter-Up Progress Numbers
+        const counters = document.querySelectorAll('.counter');
+        const counterUpFn = window.counterUp?.default || window.counterUp;
+        if (counterUpFn) {
+          const countObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                counterUpFn(entry.target, { duration: 2000, delay: 16 });
+                countObserver.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.1 });
+          counters.forEach(c => countObserver.observe(c));
+        }
+
+        // C. Run Slick Carousel Framework
+        try {
+          $('.slick-test-carousel').slick({ infinite: true, slidesToShow: 2, slidesToScroll: 1, autoplay: true, autoplaySpeed: 2500 });
+        } catch(e) { console.error("Slick Slider failed:", e); }
+
+        // D. Run Swiper Slider Engine
+        try {
+          new Swiper('.swiper-test-carousel', { loop: true, autoplay: { delay: 2500 } });
+        } catch(e) { console.error("Swiper failed:", e); }
+
+        // E. Run Fancybox v3 Window Hooks
+        try {
+          $('[data-fancybox]').fancybox({ 
+            src: '#inline-popup-content',
+            type: 'inline',
+            buttons: ["close"] 
+          });
+        } catch(e) { console.error("Fancybox failed:", e); }
+
+        // F. Run Standalone Panzoom Controls
+        try {
+          const panElement = document.getElementById('panzoomTarget');
+          const panWrapper = document.getElementById('panzoomContainer');
+          const PanzoomEngine = window.Panzoom?.default || window.Panzoom;
+          
+          if (PanzoomEngine && panElement) {
+            const panInstance = PanzoomEngine(panElement, { maxScale: 5 });
+            panWrapper.addEventListener('wheel', (e) => {
+              e.preventDefault();
+              panInstance.zoomWithWheel(e);
+            }, { passive: false });
+          }
+        } catch(e) { console.error("Panzoom failed:", e); }
+
+      });
+    </script>
+    
   </body>
 </html>
