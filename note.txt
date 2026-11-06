@@ -1,8 +1,0 @@
-use only this
-for lato font
-400,700,900
-
-and
-
-poppins
-400,500,600,700
