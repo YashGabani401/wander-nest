@@ -1,0 +1,100 @@
+                                        /* ===== font-family Lato ===== */
+@font-face {
+   font-family: 'Lato';
+   src: url('./assets/plugins/fonts/Lato/Lato-Black.eot');
+   src: url('./assets/plugins/fonts/Lato/Lato-Black.eot?#iefix') format('embedded-opentype'),
+      url('./assets/plugins/fonts/Lato/Lato-Black.woff2') format('woff2'),
+      url('./assets/plugins/fonts/Lato/Lato-Black.woff') format('woff'),
+      url('./assets/plugins/fonts/Lato/Lato-Black.ttf') format('truetype'),
+      url('./assets/plugins/fonts/Lato/Lato-Black.svg#Lato-Black') format('svg');
+   font-weight: 900;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Lato';
+   src: url('./assets/plugins/fonts/Lato/Lato-Bold.eot');
+   src: url('./assets/plugins/fonts/Lato/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+      url('./assets/plugins/fonts/Lato/Lato-Bold.woff2') format('woff2'),
+      url('./assets/plugins/fonts/Lato/Lato-Bold.woff') format('woff'),
+      url('./assets/plugins/fonts/Lato/Lato-Bold.ttf') format('truetype'),
+      url('./assets/plugins/fonts/Lato/Lato-Bold.svg#Lato-Bold') format('svg');
+   font-weight: 700;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Lato';
+   src: url('./assets/plugins/fonts/Lato/Lato-Regular.eot');
+   src: url('./assets/plugins/fonts/Lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+      url('./assets/plugins/fonts/Lato/Lato-Regular.woff2') format('woff2'),
+      url('./assets/plugins/fonts/Lato/Lato-Regular.woff') format('woff'),
+      url('./assets/plugins/fonts/Lato/Lato-Regular.ttf') format('truetype'),
+      url('./assets/plugins/fonts/Lato/Lato-Regular.svg#Lato-Regular') format('svg');
+   font-weight: 400;
+   font-style: normal;
+}
+
+                                        /* ----- font-family poppins ----- */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../plugins/fonts/poppins/Poppins-Bold.eot');
+    src: url('../plugins/fonts/poppins/Poppins-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../plugins/fonts/poppins/Poppins-Bold.woff2') format('woff2'),
+        url('../plugins/fonts/poppins/Poppins-Bold.woff') format('woff'),
+        url('../plugins/fonts/poppins/Poppins-Bold.ttf') format('truetype'),
+        url('../plugins/fonts/poppins/Poppins-Bold.svg#Poppins-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../plugins/fonts/poppins/Poppins-Medium.eot');
+    src: url('../plugins/fonts/poppins/Poppins-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../plugins/fonts/poppins/Poppins-Medium.woff2') format('woff2'),
+        url('../plugins/fonts/poppins/Poppins-Medium.woff') format('woff'),
+        url('../plugins/fonts/poppins/Poppins-Medium.ttf') format('truetype'),
+        url('../plugins/fonts/poppins/Poppins-Medium.svg#Poppins-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../plugins/fonts/poppins/Poppins-Regular.eot');
+    src: url('../plugins/fonts/poppins/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../plugins/fonts/poppins/Poppins-Regular.woff2') format('woff2'),
+        url('../plugins/fonts/poppins/Poppins-Regular.woff') format('woff'),
+        url('../plugins/fonts/poppins/Poppins-Regular.ttf') format('truetype'),
+        url('../plugins/fonts/poppins/Poppins-Regular.svg#Poppins-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../plugins/fonts/poppins/Poppins-SemiBold.eot');
+    src: url('../plugins/fonts/poppins/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../plugins/fonts/poppins/Poppins-SemiBold.woff2') format('woff2'),
+        url('../plugins/fonts/poppins/Poppins-SemiBold.woff') format('woff'),
+        url('../plugins/fonts/poppins/Poppins-SemiBold.ttf') format('truetype'),
+        url('../plugins/fonts/poppins/Poppins-SemiBold.svg#Poppins-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+/* ===== common stylesheet ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0px;
+    color: #000000;
+}
