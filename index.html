@@ -4,8 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WanderNest</title>
-    <!-- ===== custom stylesheet ===== -->
+                        <!-- ===== custom stylesheet ===== -->
+     <!-- ===== common ===== -->
     <link rel="stylesheet" href="./assets/css/common.css">
+
+    <!-- ===== home ===== -->
+    <link rel="stylesheet" href="./assets/css/home.css">
 
                         <!-- ===== plugins ===== -->
     <!-- ===== bootstrap ===== -->
@@ -83,6 +87,25 @@
       </nav>
     </header>
 
+    <main>
+      <!-- ===== hero section ===== -->
+      <section class="hero-section">
+        <div class="slick-slider">
+          <div>
+            <img src="./assets/images/hero-section/hero-1.jpg" alt="hero-image">
+          </div>
+
+          <div>
+            <img src="./assets/images/hero-section/hero-2.jpg" alt="hero-image">
+          </div>
+
+          <div>
+            <img src="./assets/images/hero-section/hero-3.jpg" alt="hero-image">
+          </div>
+        </div>
+      </section>
+    </main>
+
                         <!-- ===== plugins ===== -->
     <!-- ===== bootstrap ===== -->
     <script src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -132,7 +155,7 @@
 
         // C. Run Slick Carousel Framework
         try {
-          $('.slick-test-carousel').slick({ infinite: true, slidesToShow: 2, slidesToScroll: 1, autoplay: true, autoplaySpeed: 2500 });
+          $('.slick-slider').slick({ infinite: true, slidesToShow: 1, slidesToScroll: 1, autoplay: true, autoplaySpeed: 2500 });
         } catch(e) { console.error("Slick Slider failed:", e); }
 
         // D. Run Swiper Slider Engine
