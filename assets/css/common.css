@@ -83,6 +83,16 @@
     font-weight: 600;
     font-style: normal;
 }
+
+/* ===== theme variables ===== */
+:root {
+    --primary-blue: #003366;
+    --secondary-coral: #FF6B6B;
+    --accent-gold: #FFD166;
+    --bg-light: #F8F9FA;
+    --text-dark: #212529;
+}
+
 /* ===== common stylesheet ===== */
 * {
     box-sizing: border-box;
@@ -91,11 +101,48 @@
 }
 
 body {
-    overflow-x: hidden;
     font-size: 98px;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0px;
-    color: #000000;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
     font-family: 'Lato', sans-serif;
+}
+
+/* ===== button ===== */
+.btn-primary {
+    background-color: var(--secondary-coral) !important;
+    border-color: var(--secondary-coral) !important;
+    color: #ffffff !important;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e05555 !important;
+    border-color: #e05555 !important;
+    transform: translateY(-1px);
+}
+
+/* ===== header ===== */
+.navbar {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(0, 51, 102, 0.08);
+}
+
+.navbar-brand span {
+    color: var(--primary-blue);
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-dark);
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--secondary-coral) !important;
 }
