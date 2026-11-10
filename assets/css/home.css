@@ -1,6 +1,79 @@
-/* ===== hero-section ===== */
+                                        /* ===== hero-section ===== */
 .hero-section img {
     height: 80vh;
     width: 100%;
     object-fit: cover;
+}
+
+.hero-headline {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    width: 80%;
+}
+
+.hero-headline a {
+    background-color: #FF6B6B;
+    border: none;
+}
+
+.hero-headline p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.hero-headline h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* ===== slick slider ===== */
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0, 51, 102, 0.8);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    background-color: #FF6B6B;
+}
+
+.slick-prev {
+    left: 20px;
+}
+
+.slick-next {
+    right: 20px;
+    left: auto;
+}
+
+.slick-prev:before {
+    content: "❮";
+    font-size: 18px;
+    color: #ffffff;
+    opacity: 1;
+}
+
+.slick-next:before {
+    content: "❯";
+    font-size: 18px;
+    color: #ffffff;
+    opacity: 1;
 }

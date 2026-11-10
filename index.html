@@ -4,17 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WanderNest</title>
-                        <!-- ===== custom stylesheet ===== -->
-     <!-- ===== common ===== -->
-    <link rel="stylesheet" href="./assets/css/common.css">
-
-    <!-- ===== home ===== -->
-    <link rel="stylesheet" href="./assets/css/home.css">
-
                         <!-- ===== plugins ===== -->
     <!-- ===== bootstrap ===== -->
     <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
-
+    
     <!-- ===== slick slider ===== -->
     <link rel="stylesheet" href="./assets/plugins/sliders/slick/css/slick.min.css">
     <link rel="stylesheet" href="./assets/plugins/sliders/slick/css/slick-theme.min.css">
@@ -29,10 +22,16 @@
     <link rel="stylesheet" href="./assets/plugins/fancybox/css/jquery.fancybox.min.css" />
 
     <!-- ===== font-awesome icons ===== -->
-     <link rel="stylesheet" href="./assets/plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/plugins/fontawesome/css/all.min.css">
+
+                        <!-- ===== custom stylesheet ===== -->
+    <!-- ===== common ===== -->
+    <link rel="stylesheet" href="./assets/css/common.css">
+      
+    <!-- ===== home ===== -->
+    <link rel="stylesheet" href="./assets/css/home.css">
   </head>
   <body>
-    <!-- ===== header ==== -->
     <header>
       <!-- ===== navigation bar ===== -->
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -103,6 +102,11 @@
             <img src="./assets/images/hero-section/hero-3.jpg" alt="hero-image">
           </div>
         </div>
+        <div class="hero-headline wow animate__animated animate__fadeIn">
+          <h1>Discover Your Next Great Adventure with WanderNest</h1>
+          <p>Explore breathtaking destinations with us.</p>
+          <a href="contact.html" class="text-capitalize btn btn-primary rounded-pill px-4">book now</a>
+        </div>
       </section>
     </main>
 
@@ -155,7 +159,14 @@
 
         // C. Run Slick Carousel Framework
         try {
-          $('.slick-slider').slick({ infinite: true, slidesToShow: 1, slidesToScroll: 1, autoplay: true, autoplaySpeed: 2500 });
+          $('.slick-slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2500,
+            arrows: true
+          });
         } catch(e) { console.error("Slick Slider failed:", e); }
 
         // D. Run Swiper Slider Engine
