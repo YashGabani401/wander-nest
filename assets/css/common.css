@@ -127,6 +127,10 @@ body {
     transform: translateY(-1px);
 }
 
+.bg-soft-blue {
+  background-color: #F4F7F9;
+}
+
 /* ===== header ===== */
 .navbar {
     background-color: #ffffff !important;
