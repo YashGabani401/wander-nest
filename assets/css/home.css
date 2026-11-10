@@ -31,12 +31,6 @@
     margin-bottom: 15px;
 }
 
-/* ===== about preview section ===== */
-.about-section .about-image {
-    height: 50vh;
-    width: 50vw;
-}
-
 /* ===== popular destinations ===== */
 .dest-section h2 {
     color: var(--primary-blue);
