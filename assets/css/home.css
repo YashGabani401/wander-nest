@@ -1,3 +1,8 @@
+                                        /* ===== common classes ===== */
+.dest-section h2,
+.about-section h2 {
+    color: var(--primary-blue);
+}
                                         /* ===== hero-section ===== */
 .hero-section img {
     height: 80vh;
@@ -35,6 +40,7 @@
 .about-section .about-image {
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 .about-section .about-image-div {
@@ -46,21 +52,73 @@
     width: 100%;
 }
 
+.about-section .about-us > p:first-of-type {
+    width: 30vw;
+}
+
+.about-section .about-card {
+    width: 70vw;
+    position: relative;
+}
+
+.about-section .about-card .floating-badge {
+    position: absolute;
+    left: 42%;
+    top: 80%;
+    color: var(--bg-light);
+    border: 3px solid #ffffff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    background: linear-gradient(135deg, #FF6B6B, #FFD166);
+    animation: floatBadge 3s ease-in-out infinite;
+    width: 6vw;
+    height: 7vh;
+}
+
+.about-section .about-card .floating-badge p:first-of-type {
+    font-size: 0.9rem;
+}
+
+.about-section .about-card .floating-badge p:last-of-type {
+    font-size: 0.7rem;
+    opacity: 0.9;
+}
+
+/* ===== animation ===== */
+@keyframes floatBadge {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
 /* ===== popular destinations ===== */
-.dest-section h2 {
-    color: var(--primary-blue);
+.dest-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08), 0 6px 6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: 0.3s all ease-in-out;
 }
 
-.dest-section .dest-card img {
-    height: 25vh;
-    width: 20vw;
+.dest-img-wrapper {
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
-.dest-section .dest-card {
-    width: 22vw;
-    background-color: #ffffff;
-    border-radius: 4%;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08), 0 6px 6px rgba(0, 0, 0, 0.05);
+.dest-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.3s all ease-in-out;
+}
+
+/* ===== hover effect ===== */
+.dest-section .dest-card:hover {
+    transform: translateY(-5px);
+}
+
+.dest-section .dest-image:hover {
+    transform: scale(1.1);
 }
 
 /* ===== slick slider ===== */
