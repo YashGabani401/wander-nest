@@ -1,6 +1,7 @@
                                         /* ===== common classes ===== */
 .dest-section h2,
-.about-section h2 {
+.about-section h2,
+.counter-section h2 {
     color: var(--primary-blue);
 }
                                         /* ===== hero-section ===== */
@@ -119,6 +120,21 @@
 
 .dest-section .dest-image:hover {
     transform: scale(1.1);
+}
+
+/* ===== counter section ===== */
+.counter-sec {
+  background: linear-gradient(135deg, var(--primary-blue), #0055a5);
+  position: relative;
+  height: 100%;
+}
+
+.counter-section div > div:not(:last-of-type) > p::after {
+    content: '+';
+}
+
+.counter-section div > div:last-of-type > p::after {
+    content: '%';
 }
 
 /* ===== slick slider ===== */
