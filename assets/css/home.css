@@ -1,9 +1,3 @@
-                                        /* ===== common classes ===== */
-.dest-section h2,
-.about-section h2,
-.counter-section h2 {
-    color: var(--primary-blue);
-}
                                         /* ===== hero-section ===== */
 .hero-section img {
     height: 80vh;
@@ -127,6 +121,8 @@
   background: linear-gradient(135deg, var(--primary-blue), #0055a5);
   position: relative;
   height: 100%;
+  margin: 0 auto;
+  border-radius: 16px;
 }
 
 .counter-section div > div:not(:last-of-type) > p::after {
