@@ -21,6 +21,12 @@
     background-color: var(--secondary-coral);
 }
 
+/* ===== counter & newsletter section ===== */
+.counter-sec,
+.newsletter-section {
+    background: linear-gradient(135deg, var(--primary-blue), #0055a5);
+}
+
 /* ===== slick slider ===== */
 .slick-prev,
 .slick-next {
@@ -187,7 +193,6 @@
 
 /* ===== counter section ===== */
 .counter-sec {
-  background: linear-gradient(135deg, var(--primary-blue), #0055a5);
   position: relative;
   height: 100%;
   margin: 0 auto;
