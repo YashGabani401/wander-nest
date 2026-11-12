@@ -1,3 +1,72 @@
+                                        /* ===== common classes ===== */
+/* ===== swiper slider ===== */
+.package-section .swiper-button-prev,
+.testimonial-section .swiper-button-prev,
+.package-section .swiper-button-next,
+.testimonial-section .swiper-button-next {
+    color: var(--secondary-coral);
+}
+
+.package-section .swiper-button-prev,
+.testimonial-section .swiper-button-prev {
+  left: -12px;
+}
+
+.package-section .swiper-button-next,
+.testimonial-section .swiper-button-next {
+  right: -12px;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--secondary-coral);
+}
+
+/* ===== slick slider ===== */
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0, 51, 102, 0.8);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    background-color: #FF6B6B;
+}
+
+.slick-prev {
+    left: 20px;
+}
+
+.slick-next {
+    right: 20px;
+    left: auto;
+}
+
+.slick-prev:before {
+    content: "❮";
+    font-size: 18px;
+    color: #ffffff;
+    opacity: 1;
+}
+
+.slick-next:before {
+    content: "❯";
+    font-size: 18px;
+    color: #ffffff;
+    opacity: 1;
+}
                                         /* ===== hero-section ===== */
 .hero-section img {
     height: 80vh;
@@ -133,49 +202,10 @@
     content: '%';
 }
 
-/* ===== slick slider ===== */
-.slick-prev,
-.slick-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 9999;
-    width: 45px;
-    height: 45px;
-    background-color: rgba(0, 51, 102, 0.8);
-    border: none;
+                                        /* ===== package section ===== */
+/* ===== testimonials section ===== */
+.testi-image {
+    height: 75px;
+    width: 75px;
     border-radius: 50%;
-    cursor: pointer;
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
-}
-
-.slick-prev:hover,
-.slick-next:hover {
-    background-color: #FF6B6B;
-}
-
-.slick-prev {
-    left: 20px;
-}
-
-.slick-next {
-    right: 20px;
-    left: auto;
-}
-
-.slick-prev:before {
-    content: "❮";
-    font-size: 18px;
-    color: #ffffff;
-    opacity: 1;
-}
-
-.slick-next:before {
-    content: "❯";
-    font-size: 18px;
-    color: #ffffff;
-    opacity: 1;
 }
