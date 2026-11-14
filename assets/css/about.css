@@ -1,0 +1,23 @@
+/* ===== hero-section ===== */
+.hero-banner {
+    background: linear-gradient(rgba(8, 22, 40, 0.58), rgba(8, 22, 40, 0.58)), url('../images/banner/hero-banner.jpg');
+    height: 40vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.hero-banner .link a {
+  color: #ffffff;
+  transition: 0.3s all ease-in-out;
+}
+
+.hero-banner .link a:hover {
+  color: #ff6b6b;
+}
+
+.hero-banner .active {
+  color: #ffd166;
+  font-weight: 600;
+}
