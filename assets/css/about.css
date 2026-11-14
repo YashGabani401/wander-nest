@@ -71,3 +71,26 @@
 .mission_vision-section .mv-icon {
     font-size: 18px;
 }
+
+/* ===== why choose us ===== */
+.whychoose-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08), 0 6px 6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: 0.3s all ease-in-out;
+  width: 100%;
+}
+
+/* ===== hover effect ===== */
+.whychoose-section .whychoose-card:hover {
+    transform: translateY(-5px);
+}
+
+.whychoose-section .whychoose-image:hover {
+    transform: scale(1.1);
+}
+
+.whychoose-section .wc-icon {
+    font-size: 40px;
+}
