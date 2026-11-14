@@ -94,3 +94,59 @@
 .whychoose-section .wc-icon {
     font-size: 40px;
 }
+
+/* ===== team section ===== */
+.team-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08), 0 6px 6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: 0.3s all ease-in-out;
+}
+
+.team-img-wrapper {
+  height: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.team-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.3s all ease-in-out;
+  border-radius: 8px;
+}
+
+/* ===== hover effect ===== */
+.team-section .team-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-section .team-image:hover {
+    transform: scale(1.1);
+}
+
+.team-section .social-icon-link,
+.team-section .social-icon {
+    font-size: 17px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #f1f3f5;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    color: #081628;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3s all ease-in-out;
+}
+
+.team-section .social-icon-link:hover,
+.team-section .social-icon:hover {
+    background-color: #ff6b6b;
+    border-color: #ff6b6b;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
