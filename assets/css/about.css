@@ -21,3 +21,53 @@
   color: #ffd166;
   font-weight: 600;
 }
+
+/* ===== company story ===== */
+.company-section .company-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.company-section .company-image-div {
+    height: 45vh;
+    width: 100%;
+}
+
+.company-section .company-us {
+    width: 100%;
+}
+
+.company-section .company-us > p:first-of-type {
+    width: 30vw;
+}
+
+.company-section .company-card {
+    width: 70vw;
+    position: relative;
+}
+
+/* ===== mission & vision cards ===== */
+.mission_vision-section .mission_vision-us {
+    width: 100%;
+}
+
+.mission_vision-section .mission_vision-us > p:first-of-type {
+    width: 30vw;
+}
+
+.mission_vision-section .mission_vision-card {
+    width: 70vw;
+    position: relative;
+}
+
+.mission_vision-section .card {
+    box-shadow: 0 10px 30px rgba(8, 22, 40, 0.07);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    width: 80%;
+}
+
+.mission_vision-section .mv-icon {
+    font-size: 18px;
+}
