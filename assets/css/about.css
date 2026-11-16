@@ -72,6 +72,10 @@
     font-size: 18px;
 }
 
+.mission_vision-section i {
+    color: var(--secondary-coral);
+}
+
 /* ===== why choose us ===== */
 .whychoose-card {
   background-color: #ffffff;
@@ -93,6 +97,10 @@
 
 .whychoose-section .wc-icon {
     font-size: 40px;
+}
+
+.whychoose-section i {
+    color: var(--secondary-coral);
 }
 
 /* ===== team section ===== */
@@ -145,8 +153,8 @@
 
 .team-section .social-icon-link:hover,
 .team-section .social-icon:hover {
-    background-color: #ff6b6b;
-    border-color: #ff6b6b;
+    background-color: var(--secondary-coral);
+    border-color: var(--secondary-coral);
     color: #ffffff;
     transform: translateY(-2px);
 }
@@ -224,4 +232,21 @@
 
 .timeline-section .main-card2 .card::after {
     left: -141px;
+}
+
+/* ===== counter section ===== */
+.counter-sec2 {
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--primary-blue), #0055a5);
+}
+
+.counter2-section div > div:not(:last-of-type) > p::after {
+    content: '+';
+}
+
+.counter2-section div > div:last-of-type > p::after {
+    content: '%';
 }
