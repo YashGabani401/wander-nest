@@ -38,3 +38,53 @@
 .gallery-section h2 {
     color: var(--secondary-coral);
 }
+
+/* ===== itinerary section ===== */
+.itinerary-section {
+    width: 76%;
+}
+
+/* ===== tour section ===== */
+.tour-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08), 0 6px 6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: 0.3s all ease-in-out;
+}
+
+.tour-img-wrapper {
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.tour-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.3s all ease-in-out;
+}
+
+/* ===== tour swiper slider ===== */
+.tour-section .swiper-button-prev {
+  left: -12px;
+}
+
+.tour-section .swiper-button-next {
+  right: -12px;
+}
+
+/* ===== hover effect ===== */
+.tour-section .tour-card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.tour-section .tour-image:hover {
+    transform: scale(1.1);
+}
+
+.tour-card:hover h3 {
+    color: var(--secondary-coral);
+}

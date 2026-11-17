@@ -1,13 +1,6 @@
                                         /* ===== common classes ===== */
 /* ===== swiper slider ===== */
 .package-section .swiper-button-prev,
-.testimonial-section .swiper-button-prev,
-.package-section .swiper-button-next,
-.testimonial-section .swiper-button-next {
-    color: var(--secondary-coral);
-}
-
-.package-section .swiper-button-prev,
 .testimonial-section .swiper-button-prev {
   left: -12px;
 }
@@ -15,10 +8,6 @@
 .package-section .swiper-button-next,
 .testimonial-section .swiper-button-next {
   right: -12px;
-}
-
-.swiper-pagination-bullet {
-    background-color: var(--secondary-coral);
 }
 
 /* ===== counter & newsletter section ===== */
@@ -187,11 +176,12 @@
 }
 
 /* ===== hover effect ===== */
-.dest-section .dest-card:hover {
+.dest-card:hover {
     transform: translateY(-5px);
+    cursor: pointer;
 }
 
-.dest-section .dest-image:hover {
+.dest-image:hover {
     transform: scale(1.1);
 }
 

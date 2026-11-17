@@ -96,6 +96,7 @@
 /* ===== hover effect ===== */
 .whychoose-section .whychoose-card:hover {
     transform: translateY(-5px);
+    cursor: pointer;
 }
 
 .whychoose-section .whychoose-image:hover {
@@ -128,6 +129,7 @@
 /* ===== hover effect ===== */
 .team-section .team-card:hover {
     transform: translateY(-5px);
+    cursor: pointer;
 }
 
 .team-section .team-image:hover {
