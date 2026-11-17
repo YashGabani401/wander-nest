@@ -5,7 +5,6 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08), 0 6px 6px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   transition: 0.3s all ease-in-out;
-  width: 27vw;
 }
 
 .dest2-img-wrapper {
@@ -21,11 +20,57 @@
   transition: 0.3s all ease-in-out;
 }
 
+.dest2-card .card-desc {
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 /* ===== hover effect ===== */
 .dest2-section .dest2-card:hover {
     transform: translateY(-5px);
+    border-bottom-color: var(--secondary-coral);
 }
 
 .dest2-section .dest2-image:hover {
     transform: scale(1.1);
+}
+
+.dest2-card:hover h3 {
+  color: var(--secondary-coral);
+}
+
+/* ===== filter ===== */
+.filter-buttons label {
+  border: 1px solid #081628;
+  color: #081628;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+#filter-all:checked ~ .filter-buttons label[for="filter-all"],
+#filter-beach:checked ~ .filter-buttons label[for="filter-beach"],
+#filter-hills:checked ~ .filter-buttons label[for="filter-hills"],
+#filter-city:checked ~ .filter-buttons label[for="filter-city"] {
+  background-color: var(--secondary-coral);
+  border-color: var(--secondary-coral);
+  color: #ffffff;
+}
+
+#filter-beach:checked ~ .card-wrapper .main-card:not(.beach),
+#filter-hills:checked ~ .card-wrapper .main-card:not(.hills),
+#filter-city:checked ~ .card-wrapper .main-card:not(.city) {
+  display: none;
+}
+
+/* ===== hover effect ===== */
+#filter-all:not(checked) ~ .filter-buttons label[for="filter-all"]:hover,
+#filter-beach:not(checked) ~ .filter-buttons label[for="filter-beach"]:hover,
+#filter-hills:not(checked) ~ .filter-buttons label[for="filter-hills"]:hover,
+#filter-city:not(checked) ~ .filter-buttons label[for="filter-city"]:hover {
+  background-color: var(--secondary-coral);
+  border-color: var(--secondary-coral);
+  color: #ffffff;
 }

@@ -1,3 +1,10 @@
+                                        /* ====== common ===== */
+/* ===== hover effects ===== */
+.whychoose-card:hover h3,
+.team-card:hover h3 {
+    color: var(--secondary-coral);
+}
+
 /* ===== hero-section ===== */
 .hero-banner {
     background: linear-gradient(rgba(8, 22, 40, 0.58), rgba(8, 22, 40, 0.58)), url('../images/banner/hero-banner.jpg');
@@ -93,14 +100,6 @@
 
 .whychoose-section .whychoose-image:hover {
     transform: scale(1.1);
-}
-
-.whychoose-section .wc-icon {
-    font-size: 40px;
-}
-
-.whychoose-section i {
-    color: var(--secondary-coral);
 }
 
 /* ===== team section ===== */

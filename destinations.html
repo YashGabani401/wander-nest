@@ -96,33 +96,45 @@
         <div class="container">
           <!-- ===== main title ===== -->
           <div class="text-center">
-            <h2 class="text-uppercase fw-bold mb-2 wow animate__animated animate__fadeInUp">explore our destinations</h2>
-            <p class="text-muted mb-4 wow animate__animated animate__fadeInUp text-capitalize">find your next unforgettable journey from our handpicked getaways.</p>
+            <h2 class="text-uppercase fw-bold mb-2 wow animate__animated animate__fadeInDown">explore our destinations</h2>
+            <p class="text-muted mb-4 wow animate__animated animate__fadeInDown text-capitalize">find your next unforgettable journey from our handpicked getaways.</p>
           </div>
 
+          <!-- ===== hidden radio inputs ===== -->
+          <input type="radio" name="filter" id="filter-all" class="d-none" checked>
+          <input type="radio" name="filter" id="filter-beach" class="d-none">
+          <input type="radio" name="filter" id="filter-hills" class="d-none">
+          <input type="radio" name="filter" id="filter-city" class="d-none">
+
+          <div class="d-flex justify-content-center gap-2 mb-5 filter-buttons">
+            <label for="filter-all" class="btn rounded-pill px-4 py-2 text-capitalize">all</label>            
+            <label for="filter-beach" class="btn rounded-pill px-4 py-2 text-capitalize">beach</label>
+            <label for="filter-hills" class="btn rounded-pill px-4 py-2 text-capitalize">hills</label>
+            <label for="filter-city" class="btn rounded-pill px-4 py-2 text-capitalize">city</label>
+          </div>
           <!-- ===== cards ===== -->
-          <div class="row g-4 justify-content-center">
+          <div class="card-wrapper row g-4 justify-content-start">
             <!-- ===== card 1 ===== -->
-            <div class="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp">
+            <div class="main-card col-lg-4 col-md-6 beach">
               <div class="dest2-card h-100 d-flex flex-column">
                 <div class="dest2-img-wrapper w-100">
-                  <img class="dest2-image" src="./assets/images/destinations/dest-1.jpg" alt="Tropical Escape">
+                  <img class="dest2-image" src="./assets/images/destinations/dest-1.jpg" alt="beach-image">
                 </div>
                 <div class="px-3 pb-3">
                   <div class="d-flex align-items-center justify-content-between w-100">
-                    <h3 class="text-uppercase h6 pt-3 fw-bold">Tropical Escape</h3>
+                    <h3 class="text-uppercase h6 pt-3 fw-bold">bora bora, polynesia</h3>
                     <div class="d-flex justify-content-center align-items-center">
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
-                      <p class="mb-0">5.0</p>
+                      <p class="card-desc mb-0">5.0</p>
                     </div>
                   </div>
-                  <p class="text-muted small flex-grow-1">Relax on secluded island shores, turquoise ocean waters, and sun-kissed beaches.</p>
+                  <p class="card-desc text-muted small flex-grow-1">Relax on secluded island shores, turquoise ocean waters, and sun-kissed beaches.</p>
                   <div class="d-flex align-items-center justify-content-between w-100">
-                    <p class="text-capitalize mb-0 fw-bold">from $1,299</p>
+                    <p class="card-desc text-capitalize mb-0 fw-bold">from $1,899</p>
                     <a class="text-uppercase btn btn-primary rounded-pill px-4 py-2" href="#">view package</a>
                 </div>
                 </div>
@@ -130,25 +142,25 @@
             </div>
           
             <!-- ===== card 2 ===== -->
-            <div class="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp">
+            <div class="main-card col-lg-4 col-md-6 beach">
               <div class="dest2-card h-100 d-flex flex-column">
                 <div class="dest2-img-wrapper w-100">
-                  <img class="dest2-image" src="./assets/images/destinations/dest-2.avif" alt="Coastal Paradise">
+                  <img class="dest2-image" src="./assets/images/destinations/dest-2.avif" alt="beach-image">
                 </div>
                 <div class="px-3 pb-3">
                   <div class="d-flex align-items-center justify-content-between w-100">
-                    <h3 class="text-uppercase h6 pt-3 fw-bold">Coastal Paradise</h3>
+                    <h3 class="text-uppercase h6 pt-3 fw-bold">maldives atoll resort</h3>
                     <div class="d-flex justify-content-center align-items-center">
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
-                      <p class="mb-0">4.0</p>
+                      <p class="card-desc mb-0">4.8</p>
                     </div>
                   </div>
-                  <p class="text-muted small flex-grow-1">Relax on golden sands with turquoise waves, curated comfort, and oceanside views.</p>
+                  <p class="card-desc text-muted small flex-grow-1">Relax on golden sands with turquoise waves, curated comfort, and oceanside views.</p>
                   <div class="d-flex align-items-center justify-content-between w-100">
-                    <p class="text-capitalize mb-0 fw-bold">from $1,299</p>
+                    <p class="card-desc text-capitalize mb-0 fw-bold">from $1,650</p>
                     <a class="text-uppercase btn btn-primary rounded-pill px-4 py-2" href="#">view package</a>
                   </div>
                 </div>
@@ -156,26 +168,26 @@
             </div>
           
             <!-- ===== card 3 ===== -->
-            <div class="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp">
+            <div class="main-card col-lg-4 col-md-6 beach">
               <div class="dest2-card h-100 d-flex flex-column">
                 <div class="dest2-img-wrapper w-100">
-                  <img class="dest2-image" src="./assets/images/destinations/dest-3.jpg" alt="Ancient City Explorer">
+                  <img class="dest2-image" src="./assets/images/destinations2/beach-3.jpg" alt="beach-image">
                 </div>
                 <div class="px-3 pb-3">
                   <div class="d-flex align-items-center justify-content-between w-100">
-                    <h3 class="text-uppercase h6 pt-3 fw-bold">Ancient City Explorer</h3>
+                    <h3 class="text-uppercase h6 pt-3 fw-bold">amalfi coast, italy</h3>
                     <div class="d-flex justify-content-center align-items-center">
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
-                      <p class="mb-0">5.0</p>
+                      <p class="card-desc mb-0">4.9</p>
                     </div>
                   </div>
-                  <p class="text-muted small flex-grow-1">Explore historic landmarks, rich architecture, and vibrant cultural hotspots.</p>
+                  <p class="card-desc text-muted small flex-grow-1">Explore historic landmarks, rich architecture, and vibrant cultural hotspots.</p>
                   <div class="d-flex align-items-center justify-content-between w-100">
-                    <p class="text-capitalize mb-0 fw-bold">from $1,299</p>
+                    <p class="card-desc text-capitalize mb-0 fw-bold">from $1,499</p>
                     <a class="text-uppercase btn btn-primary rounded-pill px-4 py-2" href="#">view package</a>
                 </div>
                 </div>
@@ -183,25 +195,25 @@
             </div>
 
             <!-- ===== card 4 ===== -->
-            <div class="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp">
+            <div class="main-card col-lg-4 col-md-6 beach">
               <div class="dest2-card h-100 d-flex flex-column">
                 <div class="dest2-img-wrapper w-100">
-                  <img class="dest2-image" src="./assets/images/destinations/dest-4.jpg" alt="Tropical Escape">
+                  <img class="dest2-image" src="./assets/images/destinations2/beach-4.jpg" alt="beach-image">
                 </div>
                 <div class="px-3 pb-3">
                   <div class="d-flex align-items-center justify-content-between w-100">
-                    <h3 class="text-uppercase h6 pt-3 fw-bold">heritage pagoda tour</h3>
+                    <h3 class="text-uppercase h6 pt-3 fw-bold">phuket island, thailand  </h3>
                     <div class="d-flex justify-content-center align-items-center">
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
-                      <p class="mb-0">4.0</p>
+                      <p class="card-desc mb-0">4.7</p>
                     </div>
                   </div>
-                  <p class="text-muted small flex-grow-1">Discover traditional oriental architecture, historic temples, and cultural landmarks.</p>
+                  <p class="card-desc text-muted small flex-grow-1">Crystal clear waters, vibrant marine life, and lively beachside dining.</p>
                   <div class="d-flex align-items-center justify-content-between w-100">
-                    <p class="text-capitalize mb-0 fw-bold">from $1,299</p>
+                    <p class="card-desc text-capitalize mb-0 fw-bold">from $999</p>
                     <a class="text-uppercase btn btn-primary rounded-pill px-4 py-2" href="#">view package</a>
                   </div>
                 </div>
@@ -209,26 +221,26 @@
             </div>
           
             <!-- ===== card 5 ===== -->
-            <div class="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp">
+            <div class="main-card col-lg-4 col-md-6 hills">
               <div class="dest2-card h-100 d-flex flex-column">
                 <div class="dest2-img-wrapper w-100">
-                  <img class="dest2-image" src="./assets/images/destinations/dest-5.jpg" alt="Coastal Paradise">
+                  <img class="dest2-image" src="./assets/images/destinations/dest-5.jpg" alt="hills-image">
                 </div>
                 <div class="px-3 pb-3">
                   <div class="d-flex align-items-center justify-content-between w-100">
-                    <h3 class="text-uppercase h6 pt-3 fw-bold">alpine valley retreat</h3>
+                    <h3 class="text-uppercase h6 pt-3 fw-bold">swiss alps, switzerland</h3>
                     <div class="d-flex justify-content-center align-items-center">
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
-                      <p class="mb-0">5.0</p>
+                      <p class="card-desc mb-0">5.0</p>
                     </div>
                   </div>
-                  <p class="text-muted small flex-grow-1">Surround yourself with dramatic mountain cliffs, quiet valleys, and crisp fresh air.</p>
+                  <p class="card-desc text-muted small flex-grow-1">Surround yourself with dramatic mountain cliffs, quiet valleys, and crisp fresh air.</p>
                   <div class="d-flex align-items-center justify-content-between w-100">
-                    <p class="text-capitalize mb-0 fw-bold">from $1,299</p>
+                    <p class="card-desc text-capitalize mb-0 fw-bold">from $2,199</p>
                     <a class="text-uppercase btn btn-primary rounded-pill px-4 py-2" href="#">view package</a>
                 </div>
                 </div>
@@ -236,25 +248,25 @@
             </div>
           
             <!-- ===== card 6 ===== -->
-            <div class="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp">
+            <div class="main-card col-lg-4 col-md-6 hills">
               <div class="dest2-card h-100 d-flex flex-column">
                 <div class="dest2-img-wrapper w-100">
-                  <img class="dest2-image" src="./assets/images/destinations/dest-6.jpg" alt="Ancient City Explorer">
+                  <img class="dest2-image" src="./assets/images/destinations/dest-6.jpg" alt="hills-image">
                 </div>
                 <div class="px-3 pb-3">
                   <div class="d-flex align-items-center justify-content-between w-100">
-                    <h3 class="text-uppercase h6 pt-3 fw-bold">lush terrace highlands</h3>
+                    <h3 class="text-uppercase h6 pt-3 fw-bold">ubud terraces bali</h3>
                     <div class="d-flex justify-content-center align-items-center">
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
-                      <p class="mb-0">4.0</p>
+                      <p class="card-desc mb-0">4.8</p>
                     </div>
                   </div>
-                  <p class="text-muted small flex-grow-1">Wander through breathtaking green landscapes, scenic countryside vistas, and nature trails.</p>
+                  <p class="card-desc text-muted small flex-grow-1">Wander through breathtaking green landscapes, scenic countryside vistas, and nature trails.</p>
                   <div class="d-flex align-items-center justify-content-between w-100">
-                    <p class="text-capitalize mb-0 fw-bold">from $1,299</p>
+                    <p class="card-desc text-capitalize mb-0 fw-bold">from $1,150</p>
                     <a class="text-uppercase btn btn-primary rounded-pill px-4 py-2" href="#">view package</a>
                   </div>
                 </div>
@@ -262,26 +274,26 @@
             </div>
 
             <!-- ===== card 7 ===== -->
-            <div class="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp">
+            <div class="main-card col-lg-4 col-md-6 hills">
               <div class="dest2-card h-100 d-flex flex-column">
                 <div class="dest2-img-wrapper w-100">
-                  <img class="dest2-image" src="./assets/images/destinations/dest-1.jpg" alt="Tropical Escape">
+                  <img class="dest2-image" src="./assets/images/destinations2/hills-7.jpg" alt="hills-image">
                 </div>
                 <div class="px-3 pb-3">
                   <div class="d-flex align-items-center justify-content-between w-100">
-                    <h3 class="text-uppercase h6 pt-3 fw-bold">Tropical Escape</h3>
+                    <h3 class="text-uppercase h6 pt-3 fw-bold">munnar hills, kerala</h3>
                     <div class="d-flex justify-content-center align-items-center">
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
-                      <p class="mb-0">5.0</p>
+                      <p class="card-desc mb-0">4.9</p>
                     </div>
                   </div>
-                  <p class="text-muted small flex-grow-1">Relax on secluded island shores, turquoise ocean waters, and sun-kissed beaches.</p>
+                  <p class="card-desc text-muted small flex-grow-1">Endless rolling green tea plantations, misty mountain peaks, and serene valleys.</p>
                   <div class="d-flex align-items-center justify-content-between w-100">
-                    <p class="text-capitalize mb-0 fw-bold">from $1,299</p>
+                    <p class="card-desc text-capitalize mb-0 fw-bold">from $799</p>
                     <a class="text-uppercase btn btn-primary rounded-pill px-4 py-2" href="#">view package</a>
                 </div>
                 </div>
@@ -289,25 +301,25 @@
             </div>
           
             <!-- ===== card 8 ===== -->
-            <div class="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp">
+            <div class="main-card col-lg-4 col-md-6 hills">
               <div class="dest2-card h-100 d-flex flex-column">
                 <div class="dest2-img-wrapper w-100">
-                  <img class="dest2-image" src="./assets/images/destinations/dest-2.avif" alt="Coastal Paradise">
+                  <img class="dest2-image" src="./assets/images/destinations2/hills-8.jpg" alt="hills-image">
                 </div>
                 <div class="px-3 pb-3">
                   <div class="d-flex align-items-center justify-content-between w-100">
-                    <h3 class="text-uppercase h6 pt-3 fw-bold">Coastal Paradise</h3>
+                    <h3 class="text-uppercase h6 pt-3 fw-bold">banff rockies, canada</h3>
                     <div class="d-flex justify-content-center align-items-center">
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
-                      <p class="mb-0">4.0</p>
+                      <p class="card-desc mb-0">4.9</p>
                     </div>
                   </div>
-                  <p class="text-muted small flex-grow-1">Relax on golden sands with turquoise waves, curated comfort, and oceanside views.</p>
+                  <p class="card-desc text-muted small flex-grow-1">Majestic snow-capped peaks, turquoise glacial lakes, and alpine wildlife trails.</p>
                   <div class="d-flex align-items-center justify-content-between w-100">
-                    <p class="text-capitalize mb-0 fw-bold">from $1,299</p>
+                    <p class="card-desc text-capitalize mb-0 fw-bold">from $1,750</p>
                     <a class="text-uppercase btn btn-primary rounded-pill px-4 py-2" href="#">view package</a>
                   </div>
                 </div>
@@ -315,26 +327,26 @@
             </div>
           
             <!-- ===== card 9 ===== -->
-            <div class="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp">
+            <div class="main-card col-lg-4 col-md-6 city">
               <div class="dest2-card h-100 d-flex flex-column">
                 <div class="dest2-img-wrapper w-100">
-                  <img class="dest2-image" src="./assets/images/destinations/dest-3.jpg" alt="Ancient City Explorer">
+                  <img class="dest2-image" src="./assets/images/destinations/dest-3.jpg" alt="city-image">
                 </div>
                 <div class="px-3 pb-3">
                   <div class="d-flex align-items-center justify-content-between w-100">
-                    <h3 class="text-uppercase h6 pt-3 fw-bold">Ancient City Explorer</h3>
+                    <h3 class="text-uppercase h6 pt-3 fw-bold">paris skyline, france</h3>
                     <div class="d-flex justify-content-center align-items-center">
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
+                      <i class="fa-solid fa-star" style ="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
-                      <i class="fa-solid fa-star" style="color: #ffd700;"></i>
-                      <p class="mb-0">5.0</p>
+                      <p class="card-desc mb-0">5.0</p>
                     </div>
                   </div>
-                  <p class="text-muted small flex-grow-1">Explore historic landmarks, rich architecture, and vibrant cultural hotspots.</p>
+                  <p class="card-desc text-muted small flex-grow-1">Explore historic landmarks, rich architecture, and vibrant cultural hotspots.</p>
                   <div class="d-flex align-items-center justify-content-between w-100">
-                    <p class="text-capitalize mb-0 fw-bold">from $1,299</p>
+                    <p class="card-desc text-capitalize mb-0 fw-bold">from $1,599</p>
                     <a class="text-uppercase btn btn-primary rounded-pill px-4 py-2" href="#">view package</a>
                 </div>
                 </div>
@@ -342,25 +354,25 @@
             </div>
 
             <!-- ===== card 10 ===== -->
-            <div class="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp">
+            <div class="main-card col-lg-4 col-md-6 city">
               <div class="dest2-card h-100 d-flex flex-column">
                 <div class="dest2-img-wrapper w-100">
-                  <img class="dest2-image" src="./assets/images/destinations/dest-4.jpg" alt="Tropical Escape">
+                  <img class="dest2-image" src="./assets/images/destinations/dest-4.jpg" alt="city-image">
                 </div>
                 <div class="px-3 pb-3">
                   <div class="d-flex align-items-center justify-content-between w-100">
-                    <h3 class="text-uppercase h6 pt-3 fw-bold">heritage pagoda tour</h3>
+                    <h3 class="text-uppercase h6 pt-3 fw-bold">kyoto temples, japan</h3>
                     <div class="d-flex justify-content-center align-items-center">
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
-                      <p class="mb-0">4.0</p>
+                      <p class="card-desc mb-0">4.8</p>
                     </div>
                   </div>
-                  <p class="text-muted small flex-grow-1">Discover traditional oriental architecture, historic temples, and cultural landmarks.</p>
+                  <p class="card-desc text-muted small flex-grow-1">Discover traditional oriental architecture, historic temples, and cultural landmarks.</p>
                   <div class="d-flex align-items-center justify-content-between w-100">
-                    <p class="text-capitalize mb-0 fw-bold">from $1,299</p>
+                    <p class="card-desc text-capitalize mb-0 fw-bold">from $1,699</p>
                     <a class="text-uppercase btn btn-primary rounded-pill px-4 py-2" href="#">view package</a>
                   </div>
                 </div>
@@ -368,26 +380,26 @@
             </div>
           
             <!-- ===== card 11 ===== -->
-            <div class="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp">
+            <div class="main-card col-lg-4 col-md-6 city">
               <div class="dest2-card h-100 d-flex flex-column">
                 <div class="dest2-img-wrapper w-100">
-                  <img class="dest2-image" src="./assets/images/destinations/dest-5.jpg" alt="Coastal Paradise">
+                  <img class="dest2-image" src="./assets/images/destinations2/city-11.jpg" alt="city-image">
                 </div>
                 <div class="px-3 pb-3">
                   <div class="d-flex align-items-center justify-content-between w-100">
-                    <h3 class="text-uppercase h6 pt-3 fw-bold">alpine valley retreat</h3>
+                    <h3 class="text-uppercase h6 pt-3 fw-bold">santorini village, greece</h3>
                     <div class="d-flex justify-content-center align-items-center">
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
-                      <p class="mb-0">5.0</p>
+                      <p class="card-desc mb-0">4.9</p>
                     </div>
                   </div>
-                  <p class="text-muted small flex-grow-1">Surround yourself with dramatic mountain cliffs, quiet valleys, and crisp fresh air.</p>
+                  <p class="card-desc text-muted small flex-grow-1">Iconic whitewashed cubic architecture, stunning caldera sunsets, and cliffside alleys.</p>
                   <div class="d-flex align-items-center justify-content-between w-100">
-                    <p class="text-capitalize mb-0 fw-bold">from $1,299</p>
+                    <p class="card-desc text-capitalize mb-0 fw-bold">from $1,450</p>
                     <a class="text-uppercase btn btn-primary rounded-pill px-4 py-2" href="#">view package</a>
                 </div>
                 </div>
@@ -395,25 +407,25 @@
             </div>
           
             <!-- ===== card 12 ===== -->
-            <div class="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp">
+            <div class="main-card col-lg-4 col-md-6 city">
               <div class="dest2-card h-100 d-flex flex-column">
                 <div class="dest2-img-wrapper w-100">
-                  <img class="dest2-image" src="./assets/images/destinations/dest-6.jpg" alt="Ancient City Explorer">
+                  <img class="dest2-image" src="./assets/images/destinations2/city-12.jpg" alt="city-image">
                 </div>
                 <div class="px-3 pb-3">
                   <div class="d-flex align-items-center justify-content-between w-100">
-                    <h3 class="text-uppercase h6 pt-3 fw-bold">lush terrace highlands</h3>
+                    <h3 class="text-uppercase h6 pt-3 fw-bold">dubai marina, UAE</h3>
                     <div class="d-flex justify-content-center align-items-center">
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
                       <i class="fa-solid fa-star" style="color: #ffd700;"></i>
-                      <p class="mb-0">4.0</p>
+                      <p class="card-desc mb-0">4.8</p>
                     </div>
                   </div>
-                  <p class="text-muted small flex-grow-1">Wander through breathtaking green landscapes, scenic countryside vistas, and nature trails.</p>
+                  <p class="card-desc text-muted small flex-grow-1">Futuristic skyline, luxury waterfront promenades, and world-class shopping.</p>
                   <div class="d-flex align-items-center justify-content-between w-100">
-                    <p class="text-capitalize mb-0 fw-bold">from $1,299</p>
+                    <p class="card-desc text-capitalize mb-0 fw-bold">from $1,350</p>
                     <a class="text-uppercase btn btn-primary rounded-pill px-4 py-2" href="#">view package</a>
                   </div>
                 </div>

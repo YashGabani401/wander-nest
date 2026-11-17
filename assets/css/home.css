@@ -153,6 +153,10 @@
     opacity: 0.9;
 }
 
+.about-section i {
+    color: var(--secondary-coral);
+}
+
 /* ===== animation ===== */
 @keyframes floatBadge {
   0% { transform: translateY(0px); }
@@ -189,6 +193,10 @@
 
 .dest-section .dest-image:hover {
     transform: scale(1.1);
+}
+
+.dest-card:hover h3 {
+    color: var(--secondary-coral);
 }
 
 /* ===== counter section ===== */
