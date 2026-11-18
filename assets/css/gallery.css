@@ -1,0 +1,36 @@
+/* ===== gallery section ====== */
+.gallery-section .gallery-image {
+    width: 300px;
+    height: 200px;
+    transition: 0.3s all ease-in-out;
+}
+
+.gallery-section .gallery-image:hover {
+    filter: brightness(50%);
+}
+
+.gallery-img {
+  transition: 0.3s all ease-in-out;
+  object-fit: cover;
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 0.3s all ease-in-out;
+}
+
+.gallery-card:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-card:hover .gallery-img {
+  transform: scale(1.08);
+}
+
+.zoom-icon {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
