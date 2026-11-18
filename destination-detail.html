@@ -114,16 +114,16 @@
       
             <!-- ===== thumbnail gallery fancybox ===== -->
             <div class="d-flex gap-3">
-              <a href="./assets/images/gallery/bora-1.jpg" data-fancybox="tour-gallery">
+              <a href="./assets/images/gallery/bora-1.jpg" data-fancybox="tour-gallery" data-caption="Luxurious Overwater Bungalows & Turquoise Lagoon">
                 <img src="./assets/images/gallery/bora-1.jpg" class="gallery-image rounded-3 shadow-sm">
               </a>
-              <a href="./assets/images/gallery/bora-2.jpg" data-fancybox="tour-gallery">
+              <a href="./assets/images/gallery/bora-2.jpg" data-fancybox="tour-gallery" data-caption="Lush Palm Tree Reflection & Mountain Peaks">
                 <img src="./assets/images/gallery/bora-2.jpg" class="gallery-image rounded-3 shadow-sm">
               </a>
-              <a href="./assets/images/gallery/bora-3.jpg" data-fancybox="tour-gallery">
+              <a href="./assets/images/gallery/bora-3.jpg" data-fancybox="tour-gallery" data-caption="Aerial View of Tropical Island & Coral Reefs">
                 <img src="./assets/images/gallery/bora-3.jpg" class="gallery-image rounded-3 shadow-sm">
               </a>
-              <a href="./assets/images/gallery/bora-4.jpg" data-fancybox="tour-gallery">
+              <a href="./assets/images/gallery/bora-4.jpg" data-fancybox="tour-gallery" data-caption="Golden Sunset Over Tropical Shoreline">
                 <img src="./assets/images/gallery/bora-4.jpg" class="gallery-image rounded-3 shadow-sm">
               </a>
             </div>
@@ -413,6 +413,7 @@
     <script src="./assets/plugins/counter/counterup2.min.js"></script>
 
     <!-- ===== fancybox ===== -->
+    <script src="./assets/plugins/fancybox/js/jquery.min.js"></script>
     <script src="./assets/plugins/fancybox/js/jquery.fancybox.min.js"></script>
 
     <!-- ===== panzoom ===== -->
@@ -445,9 +446,17 @@
           counters.forEach(c => countObserver.observe(c));
         }
 
-        // E. Run Fancybox v3 Image Gallery with Thumbs & Navigation Arrows
-        try {
+        // ===== fancybox =====
+        $(document).ready(function() {
           $('[data-fancybox="tour-gallery"]').fancybox({
+            caption: function(instance, item) {
+              return $(this).attr('data-caption') || '';
+            },
+
+            thumbs: {
+              autoStart: true
+            },
+
             buttons: [
               "zoom",
               "slideShow",
@@ -455,14 +464,13 @@
               "thumbs",
               "close"
             ],
-            thumbs: {
-              autoStart: true
-            },
-            loop: true
+
+            youtube: {
+              controls: 1,
+              showinfo: 0
+            }
           });
-        } catch(e) { 
-          console.error("Fancybox failed:", e); 
-        }
+        });
 
         // F. Run Standalone Panzoom Controls
         try {
