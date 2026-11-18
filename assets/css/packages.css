@@ -86,3 +86,19 @@
 .package-card div div:nth-of-type(3) .card:hover div > p:first-of-type {
     color: #000000;
 }
+
+/* ==== faq ===== */
+#accordionExample .accordion-button:not(.collapsed) {
+  background-color: rgba(255, 107, 107, 0.12);
+  color: #081628;
+  box-shadow: none;
+}
+
+#accordionExample .accordion-button:focus {
+  border-color: var(--secondary-coral);
+  box-shadow: 0 0 0 0.2rem rgba(255, 107, 107, 0.25);
+}
+
+#accordionExample .accordion-button::after {
+  filter: brightness(0.4);
+}

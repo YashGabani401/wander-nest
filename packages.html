@@ -263,76 +263,135 @@
         </div>
       </section>
 
-    <!-- ===== comparison table ===== -->
-    <section class="comparison-section my-5 container">
-      <!-- ===== main-title ===== -->
-      <h2 class="text-center fw-bold text-uppercase">detailed package comparison</h2>
+      <!-- ===== comparison table ===== -->
+      <section class="comparison-section my-5 bg-white py-4">
+        <div class="container">
+          <!-- ===== main-title ===== -->
+          <h2 class="text-center fw-bold text-uppercase pb-1">detailed package comparison</h2>
+  
+          <!-- ===== table ===== -->
+          <div class="table-responsive rounded-4 shadow-sm border">
+            <table class="table table-striped table-hover table-bordered align-middle text-center mb-0">
+              <!-- ===== headings ===== -->
+              <thead class="text-uppercase">
+                <tr>
+                  <th class="text-white text-start ps-4 py-3" style="min-width: 220px; background-color: #081628;">plan</th>
+                  <th class="text-white py-3" style="min-width: 140px; background-color: #081628;">basic</th>
+                  <th class="text-white py-3" style="min-width: 140px; background-color: #081628;">standard</th>
+                  <th class="text-white py-3" style="min-width: 150px; background-color: #ff6b6b;">premium (featured)</th>
+                  <th class="text-white py-3" style="min-width: 140px; background-color: #081628;">luxury</th>
+                </tr>
+              </thead>
+  
+              <!-- ===== body ===== -->
+              <tbody class="text-capitalize">
+                <tr>
+                  <th class="text-start ps-4">accommodation</th>
+                  <td>3-star garden</td>
+                  <td>4-star beachfront</td>
+                  <td class="fw-semibold">overwater bungalow</td>
+                  <td>5-star presidential villa</td>
+                </tr>
+              
+                <tr>
+                  <th class="text-start ps-4">daily meals</th>
+                  <td>breakfast only</td>
+                  <td>breakfast & dinner</td>
+                  <td class="fw-semibold">breakfast & dinner</td>
+                  <td>all-inclusive gourmet</td>
+                </tr>
+              
+                <tr>
+                  <th class="text-start ps-4">airport transfers</th>
+                  <td><i class="fa-solid fa-xmark text-danger fs-5"></i></td>
+                  <td><i class="fa-solid fa-check text-success fs-5"></i></td>
+                  <td><i class="fa-solid fa-check text-success fs-5"></i></td>
+                  <td><i class="fa-solid fa-check text-success fs-5"></i></td>
+                </tr>
+              
+                <tr>
+                  <th class="text-start ps-4">guided excursions</th>
+                  <td>optional add-on</td>
+                  <td>1 lagoon tour</td>
+                  <td class="fw-semibold">snorkeling & sunset cruise</td>
+                  <td>unlimited private tours</td>
+                </tr>
+              
+                <tr>
+                  <th class="text-start ps-4">24/7 concierge support</th>
+                  <td><i class="fa-solid fa-check text-success fs-5"></i></td>
+                  <td><i class="fa-solid fa-check text-success fs-5"></i></td>
+                  <td><i class="fa-solid fa-check text-success fs-5"></i></td>
+                  <td><i class="fa-solid fa-check text-success fs-5"></i></td>
+                </tr>
+              
+                <tr>
+                  <th class="text-start ps-4">travel insurance</th>
+                  <td><i class="fa-solid fa-xmark text-danger fs-5"></i></td>
+                  <td><i class="fa-solid fa-xmark text-danger fs-5"></i></td>
+                  <td><i class="fa-solid fa-check text-success fs-5"></i></td>
+                  <td><i class="fa-solid fa-check text-success fs-5"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
 
-      <!-- ===== table ===== -->
-      <div class="table-responsive rounded-4 shadow-sm border">
-        <table class="table table-striped table-hover table-bordered align-middle text-center mb-0">
-          <thead class="text-uppercase">
-            <tr>
-              <th class="text-white text-start ps-4 py-3" style="min-width: 220px; background-color: #081628;">plan</th>
-              <th class="text-white py-3" style="min-width: 140px; background-color: #081628;">basic</th>
-              <th class="text-white py-3" style="min-width: 140px; background-color: #081628;">standard</th>
-              <th class="text-white py-3" style="min-width: 150px; background-color: #ff6b6b;">premium (featured)</th>
-              <th class="text-white py-3" style="min-width: 140px; background-color: #081628;">luxury</th>
-            </tr>
-          </thead>
+      <!-- ===== faq section ===== -->
+      <section class="faq-section container d-flex gap-5 align-items-center my-5 justify-content-center">
+        <!-- ===== main-title ===== -->
+        <h2 class="text-uppercase fw-bold text-center">faq</h2>
+        <div class="accordion" id="accordionExample">
+          <!-- ===== bar-1 ===== -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button text-capitalize" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Can I customize or upgrade my package after booking?</button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p class="m-0">Yes! You can easily add extra guided excursions, private airport transfers, or spa treatments to any tier by contacting our 24/7 concierge support team up to 48 hours before your departure.</p>
+              </div>
+            </div>
+          </div>
 
-          <tbody class="text-capitalize">
-            <tr>
-              <th class="text-start ps-4">accommodation</th>
-              <td>3-star garden</td>
-              <td>4-star beachfront</td>
-              <td class="fw-semibold">overwater bungalow</td>
-              <td>5-star presidential villa</td>
-            </tr>
-    
-            <tr>
-              <th class="text-start ps-4">daily meals</th>
-              <td>breakfast only</td>
-              <td>breakfast & dinner</td>
-              <td class="fw-semibold">breakfast & dinner</td>
-              <td>all-inclusive gourmet</td>
-            </tr>
-    
-            <tr>
-              <th class="text-start ps-4">airport transfers</th>
-              <td><i class="fa-solid fa-xmark text-danger fs-5"></i></td>
-              <td><i class="fa-solid fa-check text-success fs-5"></i></td>
-              <td><i class="fa-solid fa-check text-success fs-5"></i></td>
-              <td><i class="fa-solid fa-check text-success fs-5"></i></td>
-            </tr>
-    
-            <tr>
-              <th class="text-start ps-4">guided excursions</th>
-              <td>optional add-on</td>
-              <td>1 lagoon tour</td>
-              <td class="fw-semibold">snorkeling & sunset cruise</td>
-              <td>unlimited private tours</td>
-            </tr>
-    
-            <tr>
-              <th class="text-start ps-4">24/7 concierge support</th>
-              <td><i class="fa-solid fa-check text-success fs-5"></i></td>
-              <td><i class="fa-solid fa-check text-success fs-5"></i></td>
-              <td><i class="fa-solid fa-check text-success fs-5"></i></td>
-              <td><i class="fa-solid fa-check text-success fs-5"></i></td>
-            </tr>
-    
-            <tr>
-              <th class="text-start ps-4">travel insurance</th>
-              <td><i class="fa-solid fa-xmark text-danger fs-5"></i></td>
-              <td><i class="fa-solid fa-xmark text-danger fs-5"></i></td>
-              <td><i class="fa-solid fa-check text-success fs-5"></i></td>
-              <td><i class="fa-solid fa-check text-success fs-5"></i></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+          <!-- ===== bar-2 ===== -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-capitalize" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">What is included in the Premium Featured Plan?</button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p class="m-0">The Premium plan includes 7 nights in an overwater lagoon bungalow, daily breakfast and dinner, roundtrip private transfers, and curated snorkeling and sunset cruise excursions.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== bar-3 ===== -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-capitalize" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">What is your cancellation and refund policy?</button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse text-capitalize" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p class="m-0">We offer a full 100% refund for cancellations made up to 14 days before your scheduled trip date. For cancellations within 14 days, flexible rescheduling options are available.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== bar-4 ===== -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-capitalize" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Are airport speedboat or helicopter transfers included in all tiers?</button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse text-capitalize" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p class="m-0">Airport transfers are included by default in the Standard, Premium, and Luxury packages. For the Basic tier, speedboat transfers can be added as an optional selection during checkout.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
