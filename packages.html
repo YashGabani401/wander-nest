@@ -91,13 +91,16 @@
     </header>
 
     <main>
-      <section class="package-card container">
-        <h1 class="fw-bold text-center text-uppercase mt-4 h2">choose your perfect getaway</h1>
+      <!-- ===== package cards ===== -->
+      <section class="package-card container my-5">
+        <!-- ===== main-title ===== -->
+        <h1 class="fw-bold text-center text-uppercase h2">choose your perfect getaway</h1>
 
         <div class="row justify-content-start g-4 my-1">
           <!-- ===== card-1 ===== -->
           <div class="col-lg-4 col-md-5 col-xl-3">
             <div class="card p-4 d-flex flex-column h-100">
+              <!-- ===== about-plan ===== -->
               <div class="text-center fw-bold text-uppercase">
                 <h2 class="fw-bold">basic</h2>
                 <p>$1,299/person</p>
@@ -105,6 +108,7 @@
   
               <p class="text-center">Ideal for budget-conscious travelers seeking essential island comforts.</p>
               
+              <!-- ===== plan details ===== -->
               <div class="text-capitalize">
                 <h3>includes</h3>
                 <div class="form-check p-1 my-1">
@@ -128,6 +132,7 @@
                 </div>
               </div>
   
+              <!-- ===== buttons ===== -->
               <input type="radio" name="filter" id="filter-basic" class="d-none" checked>
               <label for="filter-basic" class="mx-auto w-100 btn rounded-pill px-4 py-2 text-capitalize mt-3">basic</label> 
             </div>
@@ -136,6 +141,7 @@
           <!-- ===== card-2 ===== -->
           <div class="col-lg-4 col-md-5 col-xl-3">
             <div class="card p-4 d-flex flex-column h-100">
+              <!-- ===== about-plan ===== -->
               <div class="text-center fw-bold text-uppercase">
                 <h2 class="fw-bold">standard</h2>
                 <p>$2,499/person</p>
@@ -143,6 +149,7 @@
   
               <p class="text-center">A balanced mix of beachfront relaxation, dining, and seamless transit.</p>
               
+              <!-- ===== plan details ===== -->
               <div class="text-capitalize">
                 <h3>includes</h3>
                 <div class="form-check p-1 my-1">
@@ -166,6 +173,7 @@
                 </div>
               </div>
               
+              <!-- ===== buttons ===== -->
               <input type="radio" name="filter" id="filter-standard" class="d-none">
               <label for="filter-standard" class="mx-auto w-100 btn rounded-pill px-4 py-2 text-capitalize mt-3">standard</label> 
             </div>
@@ -174,6 +182,7 @@
           <!-- ===== card-3 ===== -->
           <div class="col-lg-4 col-md-5 col-xl-3">
             <div class="card p-4 d-flex flex-column h-100">
+              <!-- ===== about-plan ===== -->
               <div class="text-center fw-bold text-uppercase">
                 <h2 class="fw-bold">premium</h2>
                 <p>$3,899/person</p>
@@ -181,6 +190,7 @@
   
               <p class="text-center">Our most popular escape with overwater views and curated excursions.</p>
               
+              <!-- ===== plan details ===== -->
               <div class="text-capitalize">
                 <h3>includes</h3>
                 <div class="form-check p-1 my-1">
@@ -204,6 +214,7 @@
                 </div>
               </div>
               
+              <!-- ===== buttons ===== -->
               <input type="radio" name="filter" id="filter-premium" class="d-none">
               <label for="filter-premium" class="mx-auto w-100 btn rounded-pill px-4 py-2 text-capitalize mt-3">premium</label> 
             </div>
@@ -212,6 +223,7 @@
           <!-- ===== card-4 ===== -->
           <div class="col-lg-4 col-md-5 col-xl-3">
             <div class="card p-4 d-flex flex-column h-100">
+              <!-- ===== about-plan ===== -->
               <div class="text-center fw-bold text-uppercase">
                 <h2 class="fw-bold">luxury</h2>
                 <p>$5,599/person</p>
@@ -219,6 +231,7 @@
   
               <p class="text-center">All-inclusive VIP indulgence with private yacht charters, fine dining, and luxury spa perks.</p>
               
+              <!-- ===== plan details ===== -->
               <div class="text-capitalize">
                 <h3>includes</h3>
                 <div class="form-check p-1 my-1">
@@ -242,12 +255,84 @@
                 </div>
               </div>
               
+              <!-- ===== buttons ===== -->
               <input type="radio" name="filter" id="filter-luxury" class="d-none">
               <label for="filter-luxury" class="mx-auto w-100 btn rounded-pill px-4 py-2 text-capitalize mt-3">luxury</label> 
             </div>
           </div>
         </div>
       </section>
+
+    <!-- ===== comparison table ===== -->
+    <section class="comparison-section my-5 container">
+      <!-- ===== main-title ===== -->
+      <h2 class="text-center fw-bold text-uppercase">detailed package comparison</h2>
+
+      <!-- ===== table ===== -->
+      <div class="table-responsive rounded-4 shadow-sm border">
+        <table class="table table-striped table-hover table-bordered align-middle text-center mb-0">
+          <thead class="text-uppercase">
+            <tr>
+              <th class="text-white text-start ps-4 py-3" style="min-width: 220px; background-color: #081628;">plan</th>
+              <th class="text-white py-3" style="min-width: 140px; background-color: #081628;">basic</th>
+              <th class="text-white py-3" style="min-width: 140px; background-color: #081628;">standard</th>
+              <th class="text-white py-3" style="min-width: 150px; background-color: #ff6b6b;">premium (featured)</th>
+              <th class="text-white py-3" style="min-width: 140px; background-color: #081628;">luxury</th>
+            </tr>
+          </thead>
+
+          <tbody class="text-capitalize">
+            <tr>
+              <th class="text-start ps-4">accommodation</th>
+              <td>3-star garden</td>
+              <td>4-star beachfront</td>
+              <td class="fw-semibold">overwater bungalow</td>
+              <td>5-star presidential villa</td>
+            </tr>
+    
+            <tr>
+              <th class="text-start ps-4">daily meals</th>
+              <td>breakfast only</td>
+              <td>breakfast & dinner</td>
+              <td class="fw-semibold">breakfast & dinner</td>
+              <td>all-inclusive gourmet</td>
+            </tr>
+    
+            <tr>
+              <th class="text-start ps-4">airport transfers</th>
+              <td><i class="fa-solid fa-xmark text-danger fs-5"></i></td>
+              <td><i class="fa-solid fa-check text-success fs-5"></i></td>
+              <td><i class="fa-solid fa-check text-success fs-5"></i></td>
+              <td><i class="fa-solid fa-check text-success fs-5"></i></td>
+            </tr>
+    
+            <tr>
+              <th class="text-start ps-4">guided excursions</th>
+              <td>optional add-on</td>
+              <td>1 lagoon tour</td>
+              <td class="fw-semibold">snorkeling & sunset cruise</td>
+              <td>unlimited private tours</td>
+            </tr>
+    
+            <tr>
+              <th class="text-start ps-4">24/7 concierge support</th>
+              <td><i class="fa-solid fa-check text-success fs-5"></i></td>
+              <td><i class="fa-solid fa-check text-success fs-5"></i></td>
+              <td><i class="fa-solid fa-check text-success fs-5"></i></td>
+              <td><i class="fa-solid fa-check text-success fs-5"></i></td>
+            </tr>
+    
+            <tr>
+              <th class="text-start ps-4">travel insurance</th>
+              <td><i class="fa-solid fa-xmark text-danger fs-5"></i></td>
+              <td><i class="fa-solid fa-xmark text-danger fs-5"></i></td>
+              <td><i class="fa-solid fa-check text-success fs-5"></i></td>
+              <td><i class="fa-solid fa-check text-success fs-5"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
     </main>
 
     <footer>
