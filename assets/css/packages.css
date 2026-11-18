@@ -1,0 +1,88 @@
+/* ===== filter ===== */
+.package-card label:not(.form-check label) {
+  border: 1px solid #081628;
+  color: #081628;
+  font-weight: 600;
+  transition: 0.3s all ease-in-out;
+}
+
+#filter-basic:checked ~ label[for="filter-basic"],
+#filter-standard:checked ~ label[for="filter-standard"],
+#filter-premium:checked ~ label[for="filter-premium"],
+#filter-luxury:checked ~ label[for="filter-luxury"] {
+  background-color: var(--secondary-coral);
+  border-color: var(--secondary-coral);
+  color: #ffffff;
+}
+
+/* ===== hover effect ===== */
+#filter-basic:not(:checked) ~ label[for="filter-basic"]:hover,
+#filter-standard:not(:checked) ~ label[for="filter-standard"]:hover,
+#filter-premium:not(:checked) ~ label[for="filter-premium"]:hover,
+#filter-luxury:not(:checked) ~ label[for="filter-luxury"]:hover {
+  background-color: var(--secondary-coral);
+  border-color: var(--secondary-coral);
+  color: #ffffff;
+}
+
+/* ===== package-card section ===== */
+.package-card .card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08), 0 6px 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s all ease-in-out;
+  position: relative;
+}
+
+.package-card div div:first-of-type .card h2,
+.package-card div div:nth-of-type(2) .card h2,
+.package-card div div:nth-of-type(3) .card h2,
+.package-card div div:nth-of-type(4) .card h2 {
+    color: #000000;
+}
+
+.package-card div div:nth-of-type(3) .card {
+    border: 2px solid var(--secondary-coral);
+}
+
+.package-card div div:nth-of-type(3) .card::before {
+    content: 'Featured Plan';
+    width: 150px;
+    height: 35px;
+    background-color: var(--secondary-coral);
+    color: #ffffff;
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -5%;
+    left: 25%;
+}
+
+.package-card div div:nth-of-type(3) .card div > p:first-of-type {
+    color: var(--secondary-coral);
+}
+
+/* ===== hover effects ===== */
+.package-card div div:nth-of-type(2) .card:hover h2 {
+    color: var(--primary-blue);
+}
+
+.package-card div div:nth-of-type(3) .card:hover h2 {
+    color: var(--secondary-coral);
+}
+
+.package-card div div:nth-of-type(4) .card:hover h2 {
+    color: var(--accent-gold);
+}
+
+.package-card div div .card:hover {
+    transform: translateY(-5px);
+}
+
+.package-card div div:nth-of-type(3) .card:hover div > p:first-of-type {
+    color: #000000;
+}

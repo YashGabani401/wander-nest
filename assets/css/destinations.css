@@ -48,7 +48,7 @@
   border: 1px solid #081628;
   color: #081628;
   font-weight: 600;
-  transition: all 0.3s ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
 #filter-all:checked ~ .filter-buttons label[for="filter-all"],
@@ -67,10 +67,10 @@
 }
 
 /* ===== hover effect ===== */
-#filter-all:not(checked) ~ .filter-buttons label[for="filter-all"]:hover,
-#filter-beach:not(checked) ~ .filter-buttons label[for="filter-beach"]:hover,
-#filter-hills:not(checked) ~ .filter-buttons label[for="filter-hills"]:hover,
-#filter-city:not(checked) ~ .filter-buttons label[for="filter-city"]:hover {
+#filter-all:not(:checked) ~ .filter-buttons label[for="filter-all"]:hover,
+#filter-beach:not(:checked) ~ .filter-buttons label[for="filter-beach"]:hover,
+#filter-hills:not(:checked) ~ .filter-buttons label[for="filter-hills"]:hover,
+#filter-city:not(:checked) ~ .filter-buttons label[for="filter-city"]:hover {
   background-color: var(--secondary-coral);
   border-color: var(--secondary-coral);
   color: #ffffff;

@@ -25,8 +25,8 @@
     <!-- ===== common ===== -->
     <link rel="stylesheet" href="./assets/css/common.css">
       
-    <!-- ===== home ===== -->
-    <link rel="stylesheet" href="./assets/css/about.css">
+    <!-- ===== packages ===== -->
+    <link rel="stylesheet" href="./assets/css/packages.css">
   </head>
   <body>
     <header>
@@ -91,7 +91,163 @@
     </header>
 
     <main>
+      <section class="package-card container">
+        <h1 class="fw-bold text-center text-uppercase mt-4 h2">choose your perfect getaway</h1>
 
+        <div class="row justify-content-start g-4 my-1">
+          <!-- ===== card-1 ===== -->
+          <div class="col-lg-4 col-md-5 col-xl-3">
+            <div class="card p-4 d-flex flex-column h-100">
+              <div class="text-center fw-bold text-uppercase">
+                <h2 class="fw-bold">basic</h2>
+                <p>$1,299/person</p>
+              </div>
+  
+              <p class="text-center">Ideal for budget-conscious travelers seeking essential island comforts.</p>
+              
+              <div class="text-capitalize">
+                <h3>includes</h3>
+                <div class="form-check p-1 my-1">
+                  <input type="checkbox" id="basic-1">
+                  <label for="basic-1">3-star garden bungalow</label>
+                </div>
+  
+                <div class="form-check p-1 my-1">
+                  <input type="checkbox" id="basic-2">
+                  <label for="basic-2">daily tropical breakfast</label>
+                </div>
+  
+                <div class="form-check p-1 my-1">
+                  <input type="checkbox" id="basic-3">
+                  <label for="basic-3">airport speedboat transfers</label>
+                </div>
+  
+                <div class="form-check p-1 my-1">
+                  <input type="checkbox" id="basic-4">
+                  <label for="basic-4">guided snorkeling tour</label>
+                </div>
+              </div>
+  
+              <input type="radio" name="filter" id="filter-basic" class="d-none" checked>
+              <label for="filter-basic" class="mx-auto w-100 btn rounded-pill px-4 py-2 text-capitalize mt-3">basic</label> 
+            </div>
+          </div>
+
+          <!-- ===== card-2 ===== -->
+          <div class="col-lg-4 col-md-5 col-xl-3">
+            <div class="card p-4 d-flex flex-column h-100">
+              <div class="text-center fw-bold text-uppercase">
+                <h2 class="fw-bold">standard</h2>
+                <p>$2,499/person</p>
+              </div>
+  
+              <p class="text-center">A balanced mix of beachfront relaxation, dining, and seamless transit.</p>
+              
+              <div class="text-capitalize">
+                <h3>includes</h3>
+                <div class="form-check p-1 my-1">
+                  <input type="checkbox" id="standard-1">
+                  <label for="standard-1">4-star beachfront suite</label>
+                </div>
+  
+                <div class="form-check p-1 my-1">
+                  <input type="checkbox" id="standard-2">
+                  <label for="standard-2">daily breakfast & dinner</label>
+                </div>
+  
+                <div class="form-check p-1 my-1">
+                  <input type="checkbox" id="standard-3">
+                  <label for="standard-3">airport speedboat transfers</label>
+                </div>
+  
+                <div class="form-check p-1 my-1">
+                  <input type="checkbox" id="standard-4">
+                  <label for="standard-4">guided snorkeling tour</label>
+                </div>
+              </div>
+              
+              <input type="radio" name="filter" id="filter-standard" class="d-none">
+              <label for="filter-standard" class="mx-auto w-100 btn rounded-pill px-4 py-2 text-capitalize mt-3">standard</label> 
+            </div>
+          </div>
+          
+          <!-- ===== card-3 ===== -->
+          <div class="col-lg-4 col-md-5 col-xl-3">
+            <div class="card p-4 d-flex flex-column h-100">
+              <div class="text-center fw-bold text-uppercase">
+                <h2 class="fw-bold">premium</h2>
+                <p>$3,899/person</p>
+              </div>
+  
+              <p class="text-center">Our most popular escape with overwater views and curated excursions.</p>
+              
+              <div class="text-capitalize">
+                <h3>includes</h3>
+                <div class="form-check p-1 my-1">
+                  <input type="checkbox" id="include-1">
+                  <label for="include-1">overwater lagoon bungalow</label>
+                </div>
+  
+                <div class="form-check p-1 my-1">
+                  <input type="checkbox" id="include-2">
+                  <label for="include-2">daily breakfast & dinner</label>
+                </div>
+  
+                <div class="form-check p-1 my-1">
+                  <input type="checkbox" id="include-3">
+                  <label for="include-3">roundtrip private transfers</label>
+                </div>
+  
+                <div class="form-check p-1 my-1">
+                  <input type="checkbox" id="include-4">
+                  <label for="include-4">snorkeling & sunset cruise</label>
+                </div>
+              </div>
+              
+              <input type="radio" name="filter" id="filter-premium" class="d-none">
+              <label for="filter-premium" class="mx-auto w-100 btn rounded-pill px-4 py-2 text-capitalize mt-3">premium</label> 
+            </div>
+          </div>
+
+          <!-- ===== card-4 ===== -->
+          <div class="col-lg-4 col-md-5 col-xl-3">
+            <div class="card p-4 d-flex flex-column h-100">
+              <div class="text-center fw-bold text-uppercase">
+                <h2 class="fw-bold">luxury</h2>
+                <p>$5,599/person</p>
+              </div>
+  
+              <p class="text-center">All-inclusive VIP indulgence with private yacht charters, fine dining, and luxury spa perks.</p>
+              
+              <div class="text-capitalize">
+                <h3>includes</h3>
+                <div class="form-check p-1 my-1">
+                  <input type="checkbox" id="include-1">
+                  <label for="include-1">5-star presidential villa</label>
+                </div>
+  
+                <div class="form-check p-1 my-1">
+                  <input type="checkbox" id="include-2">
+                  <label for="include-2">all-inclusive gourmet dining</label>
+                </div>
+  
+                <div class="form-check p-1 my-1">
+                  <input type="checkbox" id="include-3">
+                  <label for="include-3">private helicopter & boat</label>
+                </div>
+  
+                <div class="form-check p-1 my-1">
+                  <input type="checkbox" id="include-4">
+                  <label for="include-4">unlimited tours & insurance</label>
+                </div>
+              </div>
+              
+              <input type="radio" name="filter" id="filter-luxury" class="d-none">
+              <label for="filter-luxury" class="mx-auto w-100 btn rounded-pill px-4 py-2 text-capitalize mt-3">luxury</label> 
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
