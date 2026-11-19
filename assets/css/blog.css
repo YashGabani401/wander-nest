@@ -1,9 +1,30 @@
-/* ===== blog-section ===== */
+                                        /* ===== common ===== */
+input {
+    width: 90%;
+}
+
+/* ===== classes ===== */
+.blog-section .card-section .blog-image,
+.blog-section .widget-section .post-image,
+.blog-section .widget-section .insta-image {
+    object-fit: cover;
+}
+
+/* ===== widget ===== */
+.blog-section .widget-section .post-image,
+.blog-section .widget-section .insta-image {
+    border-radius: 6px;
+}
+                                        /* ===== blog-section ===== */
 .blog-section .card {
     background-color: #ffffff;
     border-radius: 16px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08), 0 6px 6px rgba(0, 0, 0, 0.05);
     transition: 0.3s all ease-in-out;
+}
+
+.main-card {
+    width: 48%;
 }
 
 .blog-section .blog-image {
@@ -15,7 +36,7 @@
     color: var(--secondary-coral);
 }
 
-.blog-section .card:hover {
+.blog-section .card-section .card:hover {
     transform: translateY(-5px);
 }
 
@@ -25,4 +46,39 @@
 
 .blog-section .card:has(.link:hover) h2 {
   color: #000000;
+}
+
+                    /* ===== side-bar widget section ===== */
+.blog-section .widget-section .bar {
+    background-color: #081628;
+    border-radius: 16px 16px 0 0;
+}
+
+/* ===== recent post widget ===== */
+.blog-section .widget-section .post-image {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+    min-height: 52px;
+}
+
+/* ===== insta feed widget ===== */
+.blog-section .widget-section .insta-image {
+    width: 65px;
+    height: 65px;
+}
+
+/* ===== tag cloud widget ===== */
+.blog-section .widget-section .bubble {
+    background-color: #eef2f6;
+    border-radius: 16px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+/* ===== hover effects ===== */
+.blog-section .widget-section .bubble:hover {
+    background-color: var(--secondary-coral);
+    color: #ffffff;
 }
