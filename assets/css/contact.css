@@ -7,6 +7,11 @@ iframe {
     height: 174px;
 }
 
+/* ===== hover effect ====== */
+a:hover {
+    color: var(--secondary-coral);
+}
+
 /* ===== common classes ===== */
 .contact-section .form-card,
 .contact-section .address-card .card {
