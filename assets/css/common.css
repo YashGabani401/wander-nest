@@ -135,6 +135,12 @@ label:hover {
     cursor: pointer;
 }
 
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
                     /* ===== classes ===== */
 .navbar {
     font-family: 'Poppins', sans-serif;
