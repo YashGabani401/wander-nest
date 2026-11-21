@@ -29,52 +29,7 @@
   font-weight: 600;
 }
 
-/* ===== company story ===== */
-.company-section .company-image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.company-section .company-image-div {
-    height: 45vh;
-    width: 100%;
-}
-
-.company-section .company-us {
-    width: 100%;
-}
-
-.company-section .company-us > p:first-of-type {
-    width: 30vw;
-}
-
-.company-section .company-card {
-    width: 70vw;
-    position: relative;
-}
-
 /* ===== mission & vision cards ===== */
-.mission_vision-section .mission_vision-us {
-    width: 100%;
-}
-
-.mission_vision-section .mission_vision-us > p:first-of-type {
-    width: 30vw;
-}
-
-.mission_vision-section .mission_vision-card {
-    width: 70vw;
-    position: relative;
-}
-
-.mission_vision-section .card {
-    box-shadow: 0 10px 30px rgba(8, 22, 40, 0.07);
-    border: 1px solid rgba(0, 0, 0, 0.04);
-    border-radius: 8px;
-    width: 80%;
-}
-
 .mission_vision-section .mv-icon {
     font-size: 18px;
 }
@@ -169,7 +124,8 @@
 .timeline-section .main {
     position: relative;
     max-width: 1100px;
-    margin: 60px auto 0;
+    margin: 0 auto;
+    height: auto;
 }
 
 .timeline-section .main::after {
@@ -177,8 +133,8 @@
     position: absolute;
     width: 4px;
     background-color: #081628;
-    top: 60px;
-    bottom: 60px;
+    top: 40px;
+    bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -188,7 +144,6 @@
     position: relative;
     width: 50%;
     padding: 20px 50px;
-    box-sizing: border-box;
 }
 
 .timeline-section .main-card {
@@ -197,42 +152,90 @@
 
 .timeline-section .main-card2 {
     left: 45px;
-    margin-top: 400px;
+    margin-top: 320px;
 }
 
 .timeline-section .card {
     position: relative;
     border: 1px solid #ff6b6b;
     border-radius: 25px 25px 50px;
-    width: 100%;
     padding: 20px;
-    background-color: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 0 8px 24px rgba(8, 22, 40, 0.06);
-    margin-bottom: 220px;
+    margin-bottom: 180px;
 }
 
 .timeline-section .card::after {
     content: attr(data-year);
     position: absolute;
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     background-color: #ffffff;
     border: 4px solid #3498db;
     top: 15px;
     z-index: 2;
-    justify-content: center;
     display: flex;
     align-items: center;
+    justify-content: center;
     font-weight: 700;
 }
 
 .timeline-section .main-card .card::after {
-    right: -131px;
+    right: -126px;
 }
 
 .timeline-section .main-card2 .card::after {
-    left: -141px;
+    left: -136px;
+}
+
+/* ===== media-query ===== */
+@media (max-width: 991px) {
+    .timeline-section .main {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 30px;
+        padding-left: 70px;
+        padding-right: 15px;
+    }
+
+    .timeline-section .main::after {
+        left: 34px;
+        top: 20px;
+        bottom: 20px;
+        transform: none;
+    }
+
+    .timeline-section .main-card,
+    .timeline-section .main-card2 {
+        width: 100%;
+        left: 0;
+        margin-top: 0;
+        padding: 0;
+        gap: 0;
+    }
+
+    .timeline-section .main-card,
+    .timeline-section .main-card2 {
+        display: contents;
+    }
+    .timeline-section .card[data-year="2015"] { order: 1; }
+    .timeline-section .card[data-year="2018"] { order: 2; }
+    .timeline-section .card[data-year="2022"] { order: 3; }
+    .timeline-section .card[data-year="2026"] { order: 4; }
+
+    .timeline-section .card {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .timeline-section .main-card .card::after,
+    .timeline-section .main-card2 .card::after {
+        width: 56px;
+        height: 56px;
+        font-size: 0.85rem;
+        left: -64px;
+        right: auto;
+        top: 16px;
+    }
 }
 
 /* ===== counter section ===== */
