@@ -85,16 +85,46 @@
 }
 
 .hero-headline p {
-    font-size: 1.25rem;
     margin-bottom: 20px;
 }
 
 .hero-headline h1 {
-    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 15px;
 }
 
+/* ===== media query ===== */
+@media (width <= 767px) {
+    .hero-section h1 {
+        font-size: 24px;
+        margin-bottom: 11px;
+    }
+
+    .hero-section p {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+    .hero-section a {
+        padding: 4px 19px;
+    }
+
+    .hero-section .slick-next {
+        right: 5px;
+    }
+
+    .hero-section .slick-prev {
+        left: 5px;
+    }
+
+    .hero-section .slick-next,
+    .hero-section .slick-prev {
+        height: 35px;
+        width: 35px;
+    }
+}
+
+/* ===== about preview section ===== */
 .about-section .about-card .floating-badge {
     position: absolute;
     right: -16px;
@@ -110,12 +140,7 @@
     border-radius: 12px;
 }
 
-.about-section .about-card .floating-badge p:first-of-type {
-    font-size: 0.9rem;
-}
-
 .about-section .about-card .floating-badge p:last-of-type {
-    font-size: 0.7rem;
     opacity: 0.9;
 }
 
@@ -128,6 +153,46 @@
   0% { transform: translateY(0px); }
   50% { transform: translateY(-8px); }
   100% { transform: translateY(0px); }
+}
+
+/* ===== media query ===== */
+@media (width <= 767px) {
+    .about-section h2 {
+        font-size: 20px;
+    }
+
+    .about-section .about-image-div {
+        height: 190px;
+    }
+
+    .about-section .about-card .floating-badge {
+        bottom: 7px !important;
+    }
+
+    .about-section h3 {
+        font-size: 20px;
+        margin-bottom: 2px;
+    }
+    
+    .about-section {
+        padding: 20px 0 !important;
+    }
+
+    .about-section p {
+        margin-bottom: 12px;
+    }
+
+    .about-section a {
+        padding: 6px 19px !important;
+    }
+
+    .about-section .about-card {
+        padding: 12px !important;
+    }
+
+    .about-section .speciallity {
+        margin: 8px -4px;
+    }
 }
 
 /* ===== popular destinations ===== */
@@ -166,6 +231,83 @@
     color: var(--secondary-coral);
 }
 
+/* ===== media query ===== */
+@media (width <= 767px) {
+    .dest-section {
+        padding: 24px 0 !important;
+    }
+
+    .dest-section .dest-card {
+        padding: 12px !important;
+    }
+
+    .dest-section p {
+        margin-bottom: 14px;
+    }
+
+    .dest-section a {
+        padding: 6px 20px !important;
+    }
+
+    .dest-section h3 {
+        font-size: 18px;
+        padding-top: 14px !important;
+    }
+}
+
+/* ===== package section ===== */
+/* ==== media query ===== */
+@media (width <= 767px) {
+    .package-section {
+        padding: 24px 0 !important;
+    }
+
+    .package-section .main-card {
+        padding: 12px !important;
+    }
+
+    .package-section .dest-card {
+        padding: 12px !important;
+    }
+
+    .package-section .swiper-button-next,
+    .package-section .swiper-button-prev {
+        height: 25px;
+        width: 25px;
+    }
+
+    .package-section .swiper-button-prev {
+        left: -7px;
+    }
+
+    .package-section .swiper-button-next {
+        right: -7px;
+    }
+
+    .package-section h2 {
+        margin-bottom: 6px !important;
+        font-size: 20px;
+    }
+
+    .package-section p {
+        margin-bottom: 12px !important;
+    }
+
+    .package-section h3 {
+        font-size: 18px;
+        margin-bottom: 6px;
+        padding-top: 12px !important;
+    }
+
+    .package-section a {
+        padding: 6px 20px !important;
+    }
+
+    .package-section .swiper-pagination {
+        height: 9px;
+    }
+}
+
 /* ===== counter section ===== */
 .counter-sec {
   position: relative;
@@ -182,9 +324,110 @@
     content: '%';
 }
 
+/* ==== media query ===== */
+@media (width <= 767px) {
+    .counter-section {
+        padding: 12px 0 !important;
+    }
+
+    .counter-section .goals {
+        padding: 24px !important;
+    }
+
+    .counter-section h2 {
+        font-size: 19px;
+        margin-bottom: 6px;
+    }
+
+    .counter-section .goals > div {
+        margin-top: 22px;
+    }
+
+    .counter-section .goals > div {
+        padding: 0;
+    }
+
+    .counter-section i {
+        font-size: 23px !important;
+    }
+
+    .counter-section p {
+        margin-bottom: 12px;
+        padding-top: 12px !important;
+        font-size: 18px !important;
+    }
+
+    .counter-section h3 {
+        font-size: 17px !important;
+    }
+}
+
 /* ===== testimonials section ===== */
 .testi-image {
     height: 75px;
     width: 75px;
     border-radius: 50%;
+}
+
+/* ==== media query ===== */
+@media (width <= 767px) {
+    .testimonial-section {
+        padding: 24px 0 !important;
+    }
+
+    .testimonial-section .dest-card {
+        padding: 20px !important;
+    }
+
+    .testimonial-section .swiper-button-next,
+    .testimonial-section .swiper-button-prev {
+        height: 34px;
+        width: 34px;
+    }
+
+    .testimonial-section .swiper-button-prev {
+        left: -5px;
+    }
+
+    .testimonial-section .swiper-button-next {
+        right: -5px;
+    }
+
+    .testimonial-section .testi-image {
+        margin-bottom: 12px !important;
+    }
+
+    .testimonial-section p {
+        margin-bottom: 0;
+    }
+
+    .testimonial-section h3 {
+        margin-bottom: 6px;
+        padding-top: 8px !important;
+    }
+
+    .testimonial-section .swiper-wrapper p {
+        margin-bottom: 5px !important;
+    }
+}
+
+/* ===== newsletter section ===== */
+/* ===== media query ===== */
+@media (width <= 767px) {
+    .newsletter-section {
+        padding: 12px !important;
+    }
+
+    .newsletter-section h2 {
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+
+    .newsletter-section input {
+        padding: 3px 6px !important;
+    }
+
+    .newsletter-section .btn {
+        padding: 6px 20px !important;
+    }
 }
