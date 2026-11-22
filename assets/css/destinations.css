@@ -43,6 +43,32 @@
   color: var(--secondary-coral);
 }
 
+@media (width <= 767px) {
+  .dest2-section {
+    padding: 20px 0 !important;
+  }
+
+  .dest2-section h1 {
+    font-size: 24px;
+    margin-bottom: 6px !important;
+  }
+
+  .dest2-section p {
+    margin-bottom: 12px;
+  }
+
+  .dest2-section .filter-buttons {
+    padding: 8px !important;
+    margin-bottom: 6px;
+  }
+
+  .dest2-section .filter-buttons label,
+  .dest2-section .card-wrapper a {
+    padding: 4px 18px !important;
+  }
+
+}
+
 /* ===== filter ===== */
 .filter-buttons label {
   border: 1px solid #081628;
