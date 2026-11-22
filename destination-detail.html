@@ -7,10 +7,6 @@
                         <!-- ===== plugins ===== -->
     <!-- ===== bootstrap ===== -->
     <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
-    
-    <!-- ===== slick slider ===== -->
-    <link rel="stylesheet" href="./assets/plugins/sliders/slick/css/slick.min.css">
-    <link rel="stylesheet" href="./assets/plugins/sliders/slick/css/slick-theme.min.css">
 
     <!-- ===== swiper slider ===== -->
     <link rel="stylesheet" href="./assets/plugins/sliders/swiper/swiper-bundle.min.css" />
@@ -32,9 +28,9 @@
     <link rel="stylesheet" href="./assets/css/destination-detail.css">
   </head>
   <body>
-    <header>
+    <header class="sticky-top">
       <!-- ===== navigation bar ===== -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <!-- ===== logo ===== -->
           <a class="navbar-brand" href="index.html">
@@ -103,7 +99,7 @@
             <p class="text-muted">bora bora overwater sanctuary — 7 nights of crystal waters, private excursions & unforgettable sunsets.</p>
           </div>
 
-          <div class="row g-4 align-items-start justify-content-between py-2 py-md-4 wow animate__animated animate__fadeInUp">
+          <div class="row g-4 align-items-start justify-content-around py-2 py-md-4 wow animate__animated animate__fadeInUp">
             <div class="col-12 col-lg-7">
               <!-- ===== main-image panzoom ===== -->
               <div class="main-image-zoom-container rounded-4 mb-3 overflow-hidden shadow-sm">
@@ -419,15 +415,9 @@
     <!-- ===== wow ===== -->
     <script src="./assets/plugins/wow/js/wow.min.js"></script>
 
-    <!-- ===== counter ===== -->
-    <script src="./assets/plugins/counter/counterup2.min.js"></script>
-
     <!-- ===== fancybox ===== -->
     <script src="./assets/plugins/fancybox/js/jquery.min.js"></script>
     <script src="./assets/plugins/fancybox/js/jquery.fancybox.min.js"></script>
-
-    <!-- ===== panzoom ===== -->
-    <script src="./assets/plugins/panzoom/panzoom.min.js"></script>
 
     <!-- ===== swiper slider ===== -->
     <script src="./assets/plugins/sliders/swiper/swiper-bundle.min.js"></script>
@@ -440,21 +430,6 @@
         try {
           new WOW({ boxClass: 'wow', animateClass: 'animate__animated', offset: 60 }).init();
         } catch(e) { console.error("WOW failed:", e); }
-
-        // B. Run Counter-Up Progress Numbers
-        const counters = document.querySelectorAll('.counter');
-        const counterUpFn = window.counterUp?.default || window.counterUp;
-        if (counterUpFn) {
-          const countObserver = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                counterUpFn(entry.target, { duration: 2000, delay: 16 });
-                countObserver.unobserve(entry.target);
-              }
-            });
-          }, { threshold: 0.1 });
-          counters.forEach(c => countObserver.observe(c));
-        }
 
         // ===== fancybox =====
         $(document).ready(function() {
@@ -481,21 +456,6 @@
             }
           });
         });
-
-        // F. Run Standalone Panzoom Controls
-        try {
-          const panElement = document.getElementById('panzoomTarget');
-          const panWrapper = document.getElementById('panzoomContainer');
-          const PanzoomEngine = window.Panzoom?.default || window.Panzoom;
-          
-          if (PanzoomEngine && panElement) {
-            const panInstance = PanzoomEngine(panElement, { maxScale: 5 });
-            panWrapper.addEventListener('wheel', (e) => {
-              e.preventDefault();
-              panInstance.zoomWithWheel(e);
-            }, { passive: false });
-          }
-        } catch(e) { console.error("Panzoom failed:", e); }
 
         // D1. Run Packages Swiper Slider
         try {

@@ -7,13 +7,6 @@
                         <!-- ===== plugins ===== -->
     <!-- ===== bootstrap ===== -->
     <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
-    
-    <!-- ===== slick slider ===== -->
-    <link rel="stylesheet" href="./assets/plugins/sliders/slick/css/slick.min.css">
-    <link rel="stylesheet" href="./assets/plugins/sliders/slick/css/slick-theme.min.css">
-
-    <!-- ===== swiper slider ===== -->
-    <link rel="stylesheet" href="./assets/plugins/sliders/swiper/swiper-bundle.min.css" />
 
     <!-- ===== wow ===== -->
     <link rel="stylesheet" href="./assets/plugins/wow/css/animate.min.css">
@@ -29,9 +22,9 @@
     <link rel="stylesheet" href="./assets/css/packages.css">
   </head>
   <body>
-    <header>
+    <header class="sticky-top">
       <!-- ===== navigation bar ===== -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <!-- ===== logo ===== -->
           <a class="navbar-brand" href="index.html">
@@ -92,182 +85,184 @@
 
     <main>
       <!-- ===== package cards ===== -->
-      <section class="package-card container py-4">
-        <!-- ===== main-title ===== -->
-        <div class="text-center wow animate__animated animate__fadeIn">
-          <h1 class="fw-bold text-uppercase mb-2">choose your perfect getaway</h1>
-          <p class="text-muted text-capitalize">cuated travel tiers tailored to every style and budget.</p>
-         </div>
-
-        <div class="row justify-content-start g-4 my-1 wow animate__animated animate__fadeInUp">
-          <!-- ===== card-1 ===== -->
-          <div class="col-lg-4 col-md-5 col-xl-3">
-            <div class="card p-4 d-flex flex-column h-100">
-              <!-- ===== about-plan ===== -->
-              <div class="text-center fw-bold text-uppercase">
-                <h2 class="fw-bold">basic</h2>
-                <p>$1,299/person</p>
+      <section class="package-card py-4 bg-white">
+        <div class="container">
+          <!-- ===== main-title ===== -->
+          <div class="text-center wow animate__animated animate__fadeIn">
+            <h1 class="fw-bold text-uppercase mb-2">choose your perfect getaway</h1>
+            <p class="text-muted text-capitalize">cuated travel tiers tailored to every style and budget.</p>
+           </div>
+  
+          <div class="row justify-content-start g-4 my-1 wow animate__animated animate__fadeInUp">
+            <!-- ===== card-1 ===== -->
+            <div class="col-lg-4 col-md-5 col-xl-3">
+              <div class="card p-4 d-flex flex-column h-100">
+                <!-- ===== about-plan ===== -->
+                <div class="text-center fw-bold text-uppercase">
+                  <h2 class="fw-bold">basic</h2>
+                  <p>$1,299/person</p>
+                </div>
+    
+                <p class="text-center">Ideal for budget-conscious travelers seeking essential island comforts and scenic stays.</p>
+                
+                <!-- ===== plan details ===== -->
+                <div class="text-capitalize">
+                  <h3>includes</h3>
+                  <div class="form-check p-1 my-1">
+                    <input type="checkbox" id="basic-1" disabled checked>
+                    <label for="basic-1">3-star garden bungalow</label>
+                  </div>
+    
+                  <div class="form-check p-1 my-1">
+                    <input type="checkbox" id="basic-2" disabled checked>
+                    <label for="basic-2">daily tropical breakfast</label>
+                  </div>
+    
+                  <div class="form-check p-1 my-1">
+                    <input type="checkbox" id="basic-3" disabled checked>
+                    <label for="basic-3">airport speedboat transfers</label>
+                  </div>
+    
+                  <div class="form-check p-1 my-1">
+                    <input type="checkbox" id="basic-4" disabled checked>
+                    <label for="basic-4">guided snorkeling tour</label>
+                  </div>
+                </div>
+    
+                <!-- ===== buttons ===== -->
+                <input type="radio" name="filter" id="filter-basic" class="d-none" checked>
+                <label for="filter-basic" class="btn2 mx-auto w-100 btn rounded-pill px-4 py-2 text-capitalize mt-3">basic</label> 
               </div>
-  
-              <p class="text-center">Ideal for budget-conscious travelers seeking essential island comforts and scenic stays.</p>
-              
-              <!-- ===== plan details ===== -->
-              <div class="text-capitalize">
-                <h3>includes</h3>
-                <div class="form-check p-1 my-1">
-                  <input type="checkbox" id="basic-1" disabled checked>
-                  <label for="basic-1">3-star garden bungalow</label>
-                </div>
-  
-                <div class="form-check p-1 my-1">
-                  <input type="checkbox" id="basic-2" disabled checked>
-                  <label for="basic-2">daily tropical breakfast</label>
-                </div>
-  
-                <div class="form-check p-1 my-1">
-                  <input type="checkbox" id="basic-3" disabled checked>
-                  <label for="basic-3">airport speedboat transfers</label>
-                </div>
-  
-                <div class="form-check p-1 my-1">
-                  <input type="checkbox" id="basic-4" disabled checked>
-                  <label for="basic-4">guided snorkeling tour</label>
-                </div>
-              </div>
-  
-              <!-- ===== buttons ===== -->
-              <input type="radio" name="filter" id="filter-basic" class="d-none" checked>
-              <label for="filter-basic" class="btn2 mx-auto w-100 btn rounded-pill px-4 py-2 text-capitalize mt-3">basic</label> 
             </div>
-          </div>
-
-          <!-- ===== card-2 ===== -->
-          <div class="col-lg-4 col-md-5 col-xl-3">
-            <div class="card p-4 d-flex flex-column h-100">
-              <!-- ===== about-plan ===== -->
-              <div class="text-center fw-bold text-uppercase">
-                <h2 class="fw-bold">standard</h2>
-                <p>$2,499/person</p>
+  
+            <!-- ===== card-2 ===== -->
+            <div class="col-lg-4 col-md-5 col-xl-3">
+              <div class="card p-4 d-flex flex-column h-100">
+                <!-- ===== about-plan ===== -->
+                <div class="text-center fw-bold text-uppercase">
+                  <h2 class="fw-bold">standard</h2>
+                  <p>$2,499/person</p>
+                </div>
+    
+                <p class="text-center">A balanced mix of beachfront relaxation, dining, and seamless transit.</p>
+                
+                <!-- ===== plan details ===== -->
+                <div class="text-capitalize">
+                  <h3>includes</h3>
+                  <div class="form-check p-1 my-1">
+                    <input type="checkbox" id="standard-1" disabled checked>
+                    <label for="standard-1">4-star beachfront suite</label>
+                  </div>
+    
+                  <div class="form-check p-1 my-1">
+                    <input type="checkbox" id="standard-2" disabled checked>
+                    <label for="standard-2">daily breakfast & dinner</label>
+                  </div>
+    
+                  <div class="form-check p-1 my-1">
+                    <input type="checkbox" id="standard-3" disabled checked>
+                    <label for="standard-3">airport speedboat transfers</label>
+                  </div>
+    
+                  <div class="form-check p-1 my-1">
+                    <input type="checkbox" id="standard-4" disabled checked>
+                    <label for="standard-4">guided snorkeling tour</label>
+                  </div>
+                </div>
+                
+                <!-- ===== buttons ===== -->
+                <input type="radio" name="filter" id="filter-standard" class="d-none">
+                <label for="filter-standard" class="btn2 mx-auto w-100 btn rounded-pill px-4 py-2 text-capitalize mt-3">standard</label> 
               </div>
-  
-              <p class="text-center">A balanced mix of beachfront relaxation, dining, and seamless transit.</p>
-              
-              <!-- ===== plan details ===== -->
-              <div class="text-capitalize">
-                <h3>includes</h3>
-                <div class="form-check p-1 my-1">
-                  <input type="checkbox" id="standard-1" disabled checked>
-                  <label for="standard-1">4-star beachfront suite</label>
-                </div>
-  
-                <div class="form-check p-1 my-1">
-                  <input type="checkbox" id="standard-2" disabled checked>
-                  <label for="standard-2">daily breakfast & dinner</label>
-                </div>
-  
-                <div class="form-check p-1 my-1">
-                  <input type="checkbox" id="standard-3" disabled checked>
-                  <label for="standard-3">airport speedboat transfers</label>
-                </div>
-  
-                <div class="form-check p-1 my-1">
-                  <input type="checkbox" id="standard-4" disabled checked>
-                  <label for="standard-4">guided snorkeling tour</label>
-                </div>
-              </div>
-              
-              <!-- ===== buttons ===== -->
-              <input type="radio" name="filter" id="filter-standard" class="d-none">
-              <label for="filter-standard" class="btn2 mx-auto w-100 btn rounded-pill px-4 py-2 text-capitalize mt-3">standard</label> 
             </div>
-          </div>
-          
-          <!-- ===== card-3 ===== -->
-          <div class="col-lg-4 col-md-5 col-xl-3">
-            <div class="card p-4 d-flex flex-column h-100">
-              <!-- ===== about-plan ===== -->
-              <div class="text-center fw-bold text-uppercase">
-                <h2 class="fw-bold">premium</h2>
-                <p>$3,899/person</p>
+            
+            <!-- ===== card-3 ===== -->
+            <div class="col-lg-4 col-md-5 col-xl-3">
+              <div class="card p-4 d-flex flex-column h-100">
+                <!-- ===== about-plan ===== -->
+                <div class="text-center fw-bold text-uppercase">
+                  <h2 class="fw-bold">premium</h2>
+                  <p>$3,899/person</p>
+                </div>
+    
+                <p class="text-center">Our most popular escape with overwater views and curated excursions.</p>
+                
+                <!-- ===== plan details ===== -->
+                <div class="text-capitalize">
+                  <h3>includes</h3>
+                  <div class="form-check p-1 my-1">
+                    <input type="checkbox" id="premium-1" disabled checked>
+                    <label for="premium-1">overwater lagoon bungalow</label>
+                  </div>
+    
+                  <div class="form-check p-1 my-1">
+                    <input type="checkbox" id="premium-2" disabled checked>
+                    <label for="premium-2">daily breakfast & dinner</label>
+                  </div>
+    
+                  <div class="form-check p-1 my-1">
+                    <input type="checkbox" id="premium-3" disabled checked>
+                    <label for="premium-3">roundtrip private transfers</label>
+                  </div>
+    
+                  <div class="form-check p-1 my-1">
+                    <input type="checkbox" id="premium-4" disabled checked>
+                    <label for="premium-4">snorkeling & sunset cruise</label>
+                  </div>
+                </div>
+                
+                <!-- ===== buttons ===== -->
+                <input type="radio" name="filter" id="filter-premium" class="d-none">
+                <label for="filter-premium" class="btn2 mx-auto w-100 btn rounded-pill px-4 py-2 text-capitalize mt-3">premium</label> 
               </div>
-  
-              <p class="text-center">Our most popular escape with overwater views and curated excursions.</p>
-              
-              <!-- ===== plan details ===== -->
-              <div class="text-capitalize">
-                <h3>includes</h3>
-                <div class="form-check p-1 my-1">
-                  <input type="checkbox" id="premium-1" disabled checked>
-                  <label for="premium-1">overwater lagoon bungalow</label>
-                </div>
-  
-                <div class="form-check p-1 my-1">
-                  <input type="checkbox" id="premium-2" disabled checked>
-                  <label for="premium-2">daily breakfast & dinner</label>
-                </div>
-  
-                <div class="form-check p-1 my-1">
-                  <input type="checkbox" id="premium-3" disabled checked>
-                  <label for="premium-3">roundtrip private transfers</label>
-                </div>
-  
-                <div class="form-check p-1 my-1">
-                  <input type="checkbox" id="premium-4" disabled checked>
-                  <label for="premium-4">snorkeling & sunset cruise</label>
-                </div>
-              </div>
-              
-              <!-- ===== buttons ===== -->
-              <input type="radio" name="filter" id="filter-premium" class="d-none">
-              <label for="filter-premium" class="btn2 mx-auto w-100 btn rounded-pill px-4 py-2 text-capitalize mt-3">premium</label> 
             </div>
-          </div>
-
-          <!-- ===== card-4 ===== -->
-          <div class="col-lg-4 col-md-5 col-xl-3">
-            <div class="card p-4 d-flex flex-column h-100">
-              <!-- ===== about-plan ===== -->
-              <div class="text-center fw-bold text-uppercase">
-                <h2 class="fw-bold">luxury</h2>
-                <p>$5,599/person</p>
+  
+            <!-- ===== card-4 ===== -->
+            <div class="col-lg-4 col-md-5 col-xl-3">
+              <div class="card p-4 d-flex flex-column h-100">
+                <!-- ===== about-plan ===== -->
+                <div class="text-center fw-bold text-uppercase">
+                  <h2 class="fw-bold">luxury</h2>
+                  <p>$5,599/person</p>
+                </div>
+    
+                <p class="text-center">All-inclusive VIP indulgence with private yacht charters, fine dining, and luxury spa perks.</p>
+                
+                <!-- ===== plan details ===== -->
+                <div class="text-capitalize">
+                  <h3>includes</h3>
+                  <div class="form-check p-1 my-1">
+                    <input type="checkbox" id="luxury-1" disabled checked>
+                    <label for="luxury-1">5-star presidential villa</label>
+                  </div>
+    
+                  <div class="form-check p-1 my-1">
+                    <input type="checkbox" id="luxury-2" disabled checked>
+                    <label for="luxury-2">all-inclusive gourmet dining</label>
+                  </div>
+    
+                  <div class="form-check p-1 my-1">
+                    <input type="checkbox" id="luxury-3" disabled checked>
+                    <label for="luxury-3">private helicopter & boat</label>
+                  </div>
+    
+                  <div class="form-check p-1 my-1">
+                    <input type="checkbox" id="luxury-4" disabled checked>
+                    <label for="luxury-4">unlimited tours & insurance</label>
+                  </div>
+                </div>
+                
+                <!-- ===== buttons ===== -->
+                <input type="radio" name="filter" id="filter-luxury" class="d-none">
+                <label for="filter-luxury" class="btn2 mx-auto w-100 btn rounded-pill px-4 py-2 text-capitalize mt-3">luxury</label> 
               </div>
-  
-              <p class="text-center">All-inclusive VIP indulgence with private yacht charters, fine dining, and luxury spa perks.</p>
-              
-              <!-- ===== plan details ===== -->
-              <div class="text-capitalize">
-                <h3>includes</h3>
-                <div class="form-check p-1 my-1">
-                  <input type="checkbox" id="luxury-1" disabled checked>
-                  <label for="luxury-1">5-star presidential villa</label>
-                </div>
-  
-                <div class="form-check p-1 my-1">
-                  <input type="checkbox" id="luxury-2" disabled checked>
-                  <label for="luxury-2">all-inclusive gourmet dining</label>
-                </div>
-  
-                <div class="form-check p-1 my-1">
-                  <input type="checkbox" id="luxury-3" disabled checked>
-                  <label for="luxury-3">private helicopter & boat</label>
-                </div>
-  
-                <div class="form-check p-1 my-1">
-                  <input type="checkbox" id="luxury-4" disabled checked>
-                  <label for="luxury-4">unlimited tours & insurance</label>
-                </div>
-              </div>
-              
-              <!-- ===== buttons ===== -->
-              <input type="radio" name="filter" id="filter-luxury" class="d-none">
-              <label for="filter-luxury" class="btn2 mx-auto w-100 btn rounded-pill px-4 py-2 text-capitalize mt-3">luxury</label> 
             </div>
           </div>
         </div>
       </section>
 
       <!-- ===== comparison table ===== -->
-      <section class="comparison-section my-5 bg-white py-4">
+      <section class="comparison-section my-5 py-4">
         <div class="container">
           <!-- ===== main-title ===== -->
           <h2 class="text-center fw-bold text-uppercase pb-1 wow animate__animated animate__fadeInUp">detailed package comparison</h2>
@@ -342,54 +337,56 @@
       </section>
 
       <!-- ===== faq section ===== -->
-      <section class="faq-section container d-flex gap-5 align-items-center my-5 justify-content-center">
-        <!-- ===== main-title ===== -->
-        <h2 class="text-uppercase fw-bold text-center wow animate__animated animate__fadeInUp">faq</h2>
-        <div class="accordion wow animate__animated animate__fadeInUp" id="accordionExample">
-          <!-- ===== bar-1 ===== -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button text-capitalize" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Can I customize or upgrade my package after booking?</button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <p class="m-0">Yes! You can easily add extra guided excursions, private airport transfers, or spa treatments to any tier by contacting our 24/7 concierge support team up to 48 hours before your departure.</p>
+      <section class="faq-section d-flex gap-5 align-items-center my-5 justify-content-center bg-white">
+        <div class="container">
+          <!-- ===== main-title ===== -->
+          <h2 class="text-uppercase fw-bold text-center wow animate__animated animate__fadeInUp">faq</h2>
+          <div class="accordion wow animate__animated animate__fadeInUp" id="accordionExample">
+            <!-- ===== bar-1 ===== -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button text-capitalize" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Can I customize or upgrade my package after booking?</button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p class="m-0">Yes! You can easily add extra guided excursions, private airport transfers, or spa treatments to any tier by contacting our 24/7 concierge support team up to 48 hours before your departure.</p>
+                </div>
               </div>
             </div>
-          </div>
-
-          <!-- ===== bar-2 ===== -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed text-capitalize" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">What is included in the Premium Featured Plan?</button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <p class="m-0">The Premium plan includes 7 nights in an overwater lagoon bungalow, daily breakfast and dinner, roundtrip private transfers, and curated snorkeling and sunset cruise excursions.</p>
+  
+            <!-- ===== bar-2 ===== -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-capitalize" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">What is included in the Premium Featured Plan?</button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p class="m-0">The Premium plan includes 7 nights in an overwater lagoon bungalow, daily breakfast and dinner, roundtrip private transfers, and curated snorkeling and sunset cruise excursions.</p>
+                </div>
               </div>
             </div>
-          </div>
-
-          <!-- ===== bar-3 ===== -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed text-capitalize" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">What is your cancellation and refund policy?</button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse text-capitalize" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <p class="m-0">We offer a full 100% refund for cancellations made up to 14 days before your scheduled trip date. For cancellations within 14 days, flexible rescheduling options are available.</p>
+  
+            <!-- ===== bar-3 ===== -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-capitalize" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">What is your cancellation and refund policy?</button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse text-capitalize" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p class="m-0">We offer a full 100% refund for cancellations made up to 14 days before your scheduled trip date. For cancellations within 14 days, flexible rescheduling options are available.</p>
+                </div>
               </div>
             </div>
-          </div>
-
-          <!-- ===== bar-4 ===== -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed text-capitalize" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Are airport speedboat or helicopter transfers included in all tiers?</button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse text-capitalize" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <p class="m-0">Airport transfers are included by default in the Standard, Premium, and Luxury packages. For the Basic tier, speedboat transfers can be added as an optional selection during checkout.</p>
+  
+            <!-- ===== bar-4 ===== -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-capitalize" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Are airport speedboat or helicopter transfers included in all tiers?</button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse text-capitalize" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p class="m-0">Airport transfers are included by default in the Standard, Premium, and Luxury packages. For the Basic tier, speedboat transfers can be added as an optional selection during checkout.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -474,9 +471,6 @@
     <!-- ===== wow ===== -->
     <script src="./assets/plugins/wow/js/wow.min.js"></script>
 
-    <!-- ===== counter ===== -->
-    <script src="./assets/plugins/counter/counterup2.min.js"></script>
-
     <!-- ===== LOGIC RUNTIME INITIALIZATIONS ===== -->
     <script>
       document.addEventListener("DOMContentLoaded", function() {
@@ -485,21 +479,6 @@
         try {
           new WOW({ boxClass: 'wow', animateClass: 'animate__animated', offset: 60 }).init();
         } catch(e) { console.error("WOW failed:", e); }
-
-        // B. Run Counter-Up Progress Numbers
-        const counters = document.querySelectorAll('.counter');
-        const counterUpFn = window.counterUp?.default || window.counterUp;
-        if (counterUpFn) {
-          const countObserver = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                counterUpFn(entry.target, { duration: 2000, delay: 16 });
-                countObserver.unobserve(entry.target);
-              }
-            });
-          }, { threshold: 0.1 });
-          counters.forEach(c => countObserver.observe(c));
-        }
       });
     </script>
   </body>

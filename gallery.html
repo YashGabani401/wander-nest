@@ -7,13 +7,6 @@
                         <!-- ===== plugins ===== -->
     <!-- ===== bootstrap ===== -->
     <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
-    
-    <!-- ===== slick slider ===== -->
-    <link rel="stylesheet" href="./assets/plugins/sliders/slick/css/slick.min.css">
-    <link rel="stylesheet" href="./assets/plugins/sliders/slick/css/slick-theme.min.css">
-
-    <!-- ===== swiper slider ===== -->
-    <link rel="stylesheet" href="./assets/plugins/sliders/swiper/swiper-bundle.min.css" />
 
     <!-- ===== wow ===== -->
     <link rel="stylesheet" href="./assets/plugins/wow/css/animate.min.css">
@@ -32,9 +25,9 @@
     <link rel="stylesheet" href="./assets/css/gallery.css">
   </head>
   <body>
-    <header>
+    <header class="sticky-top">
       <!-- ===== navigation bar ===== -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <!-- ===== logo ===== -->
           <a class="navbar-brand" href="index.html">
@@ -238,10 +231,16 @@
 
             <!-- ===== image-12 video ===== -->
             <div class="col-6 col-md-4 col-lg-3">
-              <div class="card border-0 shadow-sm overflow-hidden h-100">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" data-fancybox="tour-gallery" data-caption="WanderNest Maldives Resort Tour & Overview" class="gallery-item position-relative d-block">
-                  <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=600&q=80" alt="Resort Video Thumbnail" class="object-fit-cover gallery-video">
-
+              <div class="card border-0 overflow-hidden h-100">
+                <a href="./assets/videos/travel-video.mp4" 
+                   data-fancybox="tour-gallery" 
+                   data-caption="WanderNest Maldives Resort Tour & Overview" 
+                   class="gallery-item position-relative d-block h-100">
+              
+                  <img src="./assets/images/gallery/bora-2.jpg" 
+                       alt="travel image" 
+                       class="w-100 h-100 object-fit-cover gallery-video">
+              
                   <!-- ===== overlay ===== -->
                   <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center bg-dark bg-opacity-50">
                     <i class="fa-solid fa-play text-white fs-2 bg-coral p-3 rounded-circle shadow" style="background-color: var(--brand-coral);"></i>
@@ -331,9 +330,6 @@
     <!-- ===== wow ===== -->
     <script src="./assets/plugins/wow/js/wow.min.js"></script>
 
-    <!-- ===== counter ===== -->
-    <script src="./assets/plugins/counter/counterup2.min.js"></script>
-
     <!-- ===== fancybox ===== -->
     <script src="./assets/plugins/fancybox/js/jquery.min.js"></script>
     <script src="./assets/plugins/fancybox/js/jquery.fancybox.min.js"></script>
@@ -346,21 +342,6 @@
         try {
           new WOW({ boxClass: 'wow', animateClass: 'animate__animated', offset: 60 }).init();
         } catch(e) { console.error("WOW failed:", e); }
-
-        // B. Run Counter-Up Progress Numbers
-        const counters = document.querySelectorAll('.counter');
-        const counterUpFn = window.counterUp?.default || window.counterUp;
-        if (counterUpFn) {
-          const countObserver = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                counterUpFn(entry.target, { duration: 2000, delay: 16 });
-                countObserver.unobserve(entry.target);
-              }
-            });
-          }, { threshold: 0.1 });
-          counters.forEach(c => countObserver.observe(c));
-        }
 
         // ===== fancybox =====
         $(document).ready(function() {

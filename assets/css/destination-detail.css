@@ -23,6 +23,10 @@
     object-fit: cover;
 }
 
+.gallery-section .main-image-zoom-container {
+  width: 68%;
+}
+
 .main-image-zoom-container {
     height: 40vh;
     position: relative;
@@ -77,6 +81,10 @@
 
     .gallery-section .book-card a {
       padding: 6px 20px !important;
+    }
+
+    .gallery-section .main-image-zoom-container {
+      width: 100%;
     }
 }
 

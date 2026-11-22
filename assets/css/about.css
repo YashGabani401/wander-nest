@@ -361,7 +361,6 @@
     .timeline-section .main-card2 .card::after {
         width: 56px;
         height: 56px;
-        font-size: 0.85rem;
         left: -64px;
         right: auto;
         top: 16px;

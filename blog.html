@@ -7,13 +7,6 @@
                         <!-- ===== plugins ===== -->
     <!-- ===== bootstrap ===== -->
     <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
-    
-    <!-- ===== slick slider ===== -->
-    <link rel="stylesheet" href="./assets/plugins/sliders/slick/css/slick.min.css">
-    <link rel="stylesheet" href="./assets/plugins/sliders/slick/css/slick-theme.min.css">
-
-    <!-- ===== swiper slider ===== -->
-    <link rel="stylesheet" href="./assets/plugins/sliders/swiper/swiper-bundle.min.css" />
 
     <!-- ===== wow ===== -->
     <link rel="stylesheet" href="./assets/plugins/wow/css/animate.min.css">
@@ -29,9 +22,9 @@
     <link rel="stylesheet" href="./assets/css/blog.css">
   </head>
   <body>
-    <header>
+    <header class="sticky-top">
       <!-- ===== navigation bar ===== -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <!-- ===== logo ===== -->
           <a class="navbar-brand" href="index.html">
@@ -91,7 +84,7 @@
     </header>
 
     <main>
-      <section class="blog-section py-4">
+      <section class="blog-section py-4 bg-white">
         <div class="container">
           <!-- ===== main-title ===== -->
           <div class="text-center wow animate__animated animate__fadeIn">
@@ -581,9 +574,6 @@
     <!-- ===== wow ===== -->
     <script src="./assets/plugins/wow/js/wow.min.js"></script>
 
-    <!-- ===== counter ===== -->
-    <script src="./assets/plugins/counter/counterup2.min.js"></script>
-
     <!-- ===== LOGIC RUNTIME INITIALIZATIONS ===== -->
     <script>
       document.addEventListener("DOMContentLoaded", function() {
@@ -592,21 +582,6 @@
         try {
           new WOW({ boxClass: 'wow', animateClass: 'animate__animated', offset: 60 }).init();
         } catch(e) { console.error("WOW failed:", e); }
-
-        // B. Run Counter-Up Progress Numbers
-        const counters = document.querySelectorAll('.counter');
-        const counterUpFn = window.counterUp?.default || window.counterUp;
-        if (counterUpFn) {
-          const countObserver = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                counterUpFn(entry.target, { duration: 2000, delay: 16 });
-                countObserver.unobserve(entry.target);
-              }
-            });
-          }, { threshold: 0.1 });
-          counters.forEach(c => countObserver.observe(c));
-        }
       });
     </script>
   </body>

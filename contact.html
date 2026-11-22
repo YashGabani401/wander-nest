@@ -7,13 +7,6 @@
                         <!-- ===== plugins ===== -->
     <!-- ===== bootstrap ===== -->
     <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
-    
-    <!-- ===== slick slider ===== -->
-    <link rel="stylesheet" href="./assets/plugins/sliders/slick/css/slick.min.css">
-    <link rel="stylesheet" href="./assets/plugins/sliders/slick/css/slick-theme.min.css">
-
-    <!-- ===== swiper slider ===== -->
-    <link rel="stylesheet" href="./assets/plugins/sliders/swiper/swiper-bundle.min.css" />
 
     <!-- ===== wow ===== -->
     <link rel="stylesheet" href="./assets/plugins/wow/css/animate.min.css">
@@ -29,9 +22,9 @@
     <link rel="stylesheet" href="./assets/css/contact.css">
   </head>
   <body>
-    <header>
+    <header class="sticky-top">
       <!-- ===== navigation bar ===== -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <!-- ===== logo ===== -->
           <a class="navbar-brand" href="index.html">
@@ -341,9 +334,6 @@
     <!-- ===== wow ===== -->
     <script src="./assets/plugins/wow/js/wow.min.js"></script>
 
-    <!-- ===== counter ===== -->
-    <script src="./assets/plugins/counter/counterup2.min.js"></script>
-
     <!-- ===== LOGIC RUNTIME INITIALIZATIONS ===== -->
     <script>
       document.addEventListener("DOMContentLoaded", function() {
@@ -353,21 +343,7 @@
           new WOW({ boxClass: 'wow', animateClass: 'animate__animated', offset: 60 }).init();
         } catch(e) { console.error("WOW failed:", e); }
 
-        // B. Run Counter-Up Progress Numbers
-        const counters = document.querySelectorAll('.counter');
-        const counterUpFn = window.counterUp?.default || window.counterUp;
-        if (counterUpFn) {
-          const countObserver = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                counterUpFn(entry.target, { duration: 2000, delay: 16 });
-                countObserver.unobserve(entry.target);
-              }
-            });
-          }, { threshold: 0.1 });
-          counters.forEach(c => countObserver.observe(c));
-        }
-
+        // ===== success form modal =====
         const contactForm = document.getElementById("contactForm");
         const modalElement = document.getElementById("contactSuccessModal");
 
@@ -380,8 +356,7 @@
         contactForm.addEventListener("submit", function (event) {
           event.preventDefault();
           event.stopPropagation();
-        
-          // Trim whitespace from inputs so spaces-only values don't pass as valid
+
           const fields = contactForm.querySelectorAll("input, textarea");
           fields.forEach(function (field) {
             if (typeof field.value === "string") {
@@ -398,8 +373,7 @@
             }
             return;
           }
-        
-          // All required fields (Name, Email, Phone, Subject, Message) are valid
+      
           successModal.show();
         
           contactForm.reset();
