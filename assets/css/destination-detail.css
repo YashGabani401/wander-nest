@@ -37,9 +37,69 @@
     color: var(--secondary-coral);
 }
 
+/* ==== media query ===== */
+@media (width <= 767px) {
+    .gallery-section h1 {
+      font-size: 24px;
+      margin-bottom: 6px !important;
+    }
+
+    .gallery-section p {
+      margin-bottom: 12px;
+    }
+
+    .gallery-section .main-image-zoom-container {
+      height: 200px;
+    }
+
+    .gallery-section .gallery-image {
+      height: 60px;
+    }
+
+    .gallery-section .book-card {
+      padding: 12px !important;
+    }
+
+    .gallery-section .book-card h2 {
+      font-size: 20px;
+      margin-bottom: 6px;
+    }
+
+    .gallery-section .book-card h3 {
+      font-size: 18px;
+      margin-bottom: 6px;
+      padding-top: 6px !important;
+    }
+
+    .gallery-section .book-card p {
+      margin-bottom: 8px !important;
+    }
+
+    .gallery-section .book-card a {
+      padding: 6px 20px !important;
+    }
+}
+
 /* ===== itinerary section ===== */
 .itinerary-section {
     width: 76%;
+}
+
+/* ==== media query ===== */
+@media (width <= 767px) {
+    .itinerary-section {
+      padding: 0;
+      margin-top: 5px;
+    }
+
+    .itinerary-section h2 {
+      font-size: 22px;
+    }
+
+    .itinerary-section p {
+      padding: 12px 16px !important;
+      font-size: 15px;
+    }
 }
 
 /* ===== tour section ===== */
@@ -86,3 +146,42 @@
 .tour-card:hover h3 {
     color: var(--secondary-coral);
 }
+
+/* ==== media query ===== */
+@media (width <= 767px) {
+    .tour-section {
+      padding: 24px 0 !important;
+      margin-top: 15px;
+    }
+
+    .tour-section h2 {
+      font-size: 22px;
+      margin-bottom: 6px !important;
+    }
+
+    .tour-section p {
+      margin-bottom: 16px !important;
+    }
+
+    .tour-section .tour-card h3 {
+      font-size: 18px;
+    }
+
+    .tour-section .tour-card a {
+      padding: 4px 20px !important;
+    }
+
+    .tour-section .swiper-button-next,
+    .tour-section .swiper-button-prev {
+        height: 35px;
+        width: 35px;
+    }
+
+    .tour-section .swiper-button-prev {
+        left: -6px;
+    }
+
+    .tour-section .swiper-button-next {
+        right: -6px;
+    }
+  }
