@@ -31,6 +31,10 @@ input {
     height: 200px;
 }
 
+.blog-section .main-card {
+    width: 50%;
+}
+
 /* ===== hover effects ===== */
 .blog-section .link:hover {
     color: var(--secondary-coral);
@@ -68,6 +72,10 @@ input {
         font-size: 19px;
         margin-bottom: 6px;
         margin-top: 2px;
+    }
+
+    .blog-section .main-card {
+        width: 100%;
     }
 }
 
