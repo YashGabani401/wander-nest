@@ -33,6 +33,36 @@ a:hover {
     border-radius: 6px 0 0 6px;
 }
 
+/* ===== media query ===== */
+@media (width <= 767px) {
+    .contact-section h1 {
+        font-size: 24px;
+        margin-bottom: 6px;
+    }
+
+    .contact-section p {
+        margin-bottom: 12px !important;
+    }
+
+    .contact-section .form-card h2 {
+        font-size: 22px;
+        margin-bottom: 14px !important;
+    }
+
+    .contact-section .form-card input,
+    .contact-section .form-card label {
+        padding: 2px 8px;
+    }
+
+    .contact-section .form-card .btn {
+        padding: 4px 20px !important;
+    }
+
+    .contact-section .form-card p {
+        margin-bottom: 0 !important;
+    }
+}
+
 /* ===== address section ===== */
 .contact-section .address-card .main-icon {
     font-size: 30px;
@@ -41,4 +71,38 @@ a:hover {
 .map-wrapper {
   position: relative;
   height: 260px;
+}
+
+/* ==== media query ===== */
+@media (width <= 767px) {
+    .address-card .main-icon {
+        font-size: 25px !important;
+    }
+
+    .address-card p {
+        margin-bottom: 10px !important;
+        padding-bottom: 0;
+    }
+
+    .address-card .card div:nth-of-type(2) > div:nth-of-type(2) i,
+    .address-card .card div:nth-of-type(2) > div:nth-of-type(3) i {
+        margin-bottom: 28px;
+    }
+
+    .address-card .card div:nth-of-type(1) > div:nth-of-type(1) i,
+    .address-card .card div:nth-of-type(1) > div:nth-of-type(2) i {
+        margin-top: 5px;
+    }
+
+    .address-card .card:nth-of-type(2) div:nth-of-type(2) > div:nth-of-type(1) i {
+        margin-bottom: 25px;
+    }
+
+    .address-card .card {
+        padding: 10px !important;
+    }
+
+    .address-card .card:first-of-type .main-icon {
+        margin-bottom: 4px;
+    }
 }
