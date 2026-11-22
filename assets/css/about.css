@@ -7,7 +7,7 @@
 
 /* ===== hero-section ===== */
 .hero-banner {
-    background: linear-gradient(rgba(8, 22, 40, 0.58), rgba(8, 22, 40, 0.58)), url('../images/banner/hero-banner.jpg');
+    background: linear-gradient(rgba(8, 22, 40, 0.58), rgba(8, 22, 40, 0.58)), url('../images/about/hero-banner.jpg');
     height: 40vh;
     background-size: contain;
     background-repeat: no-repeat;
