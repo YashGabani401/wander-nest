@@ -48,6 +48,29 @@ input {
   color: #000000;
 }
 
+/* ===== media query ===== */
+@media (width <= 767px) {
+    .blog-section h1 {
+        font-size: 24px;
+        margin-bottom: 6px !important;
+    }
+
+    .blog-section p {
+        margin-bottom: 12px;
+    }
+
+    .blog-section .card-section p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .blog-section .card-section h2 {
+        font-size: 19px;
+        margin-bottom: 6px;
+        margin-top: 2px;
+    }
+}
+
                     /* ===== side-bar widget section ===== */
 .blog-section .widget-section .bar {
     background-color: #081628;
@@ -81,4 +104,11 @@ input {
 .blog-section .widget-section .bubble:hover {
     background-color: var(--secondary-coral);
     color: #ffffff;
+}
+
+/* ==== media query ===== */
+@media (width <= 767px) {
+    .widget-section p {
+        margin-bottom: 6px;
+    }
 }
