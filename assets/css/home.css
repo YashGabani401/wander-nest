@@ -242,7 +242,7 @@
     }
 
     .dest-section p {
-        margin-bottom: 14px;
+        margin-bottom: 14px !important;
     }
 
     .dest-section a {
@@ -252,6 +252,10 @@
     .dest-section h3 {
         font-size: 18px;
         padding-top: 14px !important;
+    }
+
+    .dest-section h2 {
+        font-size: 22px;
     }
 }
 
@@ -404,10 +408,14 @@
     .testimonial-section h3 {
         margin-bottom: 6px;
         padding-top: 8px !important;
+        font-size: 18px;
     }
 
     .testimonial-section .swiper-wrapper p {
         margin-bottom: 5px !important;
+    }
+    .testimonial-section h2 {
+        font-size: 22px;
     }
 }
 
