@@ -4,6 +4,7 @@
   border-radius: 16px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08), 0 6px 6px rgba(0, 0, 0, 0.05);
   overflow: hidden;
+  -webkit-transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   transition: 0.3s all ease-in-out;
 }
 
@@ -30,9 +31,10 @@
 
 /* ===== hover effect ===== */
 .dest2-section .dest2-card:hover {
-    transform: translateY(-5px);
-    border-bottom-color: var(--secondary-coral);
-    cursor: pointer;
+  border-bottom-color: var(--secondary-coral);
+  cursor: pointer;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .dest2-section .dest2-image:hover {
