@@ -87,6 +87,57 @@
     color: #000000;
 }
 
+/* ==== media query ===== */
+@media (width <= 767px) {
+    .package-card h1 {
+      font-size: 24px;
+    }
+
+    .package-card p {
+      margin-bottom: 8px;
+    }
+
+    .package-card .card {
+      padding: 20px !important;
+    }
+
+    .package-card .card h2 {
+      font-size: 22px;
+      margin-bottom: 6px;
+    }
+
+    .package-card .card p {
+      margin-bottom: 6px;
+    }
+
+    .package-card .card h3 {
+      font-size: 20px;
+      margin-bottom: 6px;
+    }
+
+    .package-card .card .btn2 {
+      padding: 6px 20px !important;
+      margin-top: 12px !important;
+    }
+
+    .package-card {
+      padding: 20px !important;
+    }
+}
+
+/* ===== comparison section ===== */
+@media (width <= 767px) {
+  .comparison-section {
+    margin: 24px !important;
+  }
+
+  .comparison-section h2 {
+    font-size: 22px;
+    margin-bottom: 6px;
+    padding-bottom: 0;
+  }
+}
+
 /* ==== faq ===== */
 #accordionExample .accordion-button:not(.collapsed) {
   background-color: rgba(255, 107, 107, 0.12);
@@ -101,4 +152,21 @@
 
 #accordionExample .accordion-button::after {
   filter: brightness(0.4);
+}
+
+/* ===== faq section ===== */
+@media (width <= 767px) {
+  .faq-section {
+    margin: 24px 0 !important;
+    padding: 0 24px;
+  }
+
+  .faq-section h2 {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+
+  .faq-section .accordion-button {
+    padding: 10px 14px !important;
+  }
 }
