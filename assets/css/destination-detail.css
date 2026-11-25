@@ -55,7 +55,7 @@
 }
 
 /* ==== media query ===== */
-@media (width <= 767px) {
+@media (width <= 767.98px) {
     .gallery-section h1 {
       font-size: 24px;
       margin-bottom: 6px !important;
@@ -107,7 +107,7 @@
 }
 
 /* ==== media query ===== */
-@media (width <= 767px) {
+@media (width <= 767.98px) {
     .itinerary-section {
       padding: 0;
       margin-top: 5px;
@@ -169,7 +169,7 @@
 }
 
 /* ==== media query ===== */
-@media (width <= 767px) {
+@media (width <= 767.98px) {
     .tour-section {
       padding: 24px 0 !important;
       margin-top: 15px;

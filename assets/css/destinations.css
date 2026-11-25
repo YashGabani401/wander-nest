@@ -45,7 +45,7 @@
   color: var(--secondary-coral);
 }
 
-@media (width <= 767px) {
+@media (width <= 767.98px) {
   .dest2-section {
     padding: 20px 0 !important;
   }

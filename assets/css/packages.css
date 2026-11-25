@@ -88,7 +88,7 @@
 }
 
 /* ==== media query ===== */
-@media (width <= 767px) {
+@media (width <= 767.98px) {
     .package-card h1 {
       font-size: 24px;
     }
@@ -126,7 +126,7 @@
 }
 
 /* ===== comparison section ===== */
-@media (width <= 767px) {
+@media (width <= 767.98px) {
   .comparison-section {
     margin: 24px !important;
   }
@@ -155,7 +155,7 @@
 }
 
 /* ===== faq section ===== */
-@media (width <= 767px) {
+@media (width <= 767.98px) {
   .faq-section {
     margin: 24px 0 !important;
     padding: 0 24px;

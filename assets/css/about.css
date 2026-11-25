@@ -30,7 +30,7 @@
 }
 
 /* ==== media query ===== */
-@media (width <= 767px) {
+@media (width <= 767.98px) {
     .hero-banner h1 {
         font-size: 24px;
         margin-bottom: 4px;
@@ -39,7 +39,7 @@
 
 /* ===== company section ===== */
 /* ==== media query ===== */
-@media (width <= 767px) {
+@media (width <= 767.98px) {
     .company-section {
        padding: 20px 0 !important;
     }
@@ -78,7 +78,7 @@
 }
 
 /* ==== media query ===== */
-@media (width <= 767px) {
+@media (width <= 767.98px) {
     .mission_vision-section {
        padding: 24px 0 !important;
     }
@@ -133,7 +133,7 @@
 }
 
 /* ==== media query ===== */
-@media (width <= 767px) {
+@media (width <= 767.98px) {
     .whychoose-section {
        padding: 24px 0 !important;
     }
@@ -216,7 +216,7 @@
 }
 
 /* ==== media query ===== */
-@media (width <= 767px) {
+@media (width <= 767.98px) {
     .team-section {
        padding: 24px 0 !important;
     }
@@ -318,7 +318,7 @@
 }
 
 /* ===== media-query ===== */
-@media (width <= 767px) {
+@media (width <= 767.98px) {
     .timeline-section .main {
         flex-direction: column;
         align-items: flex-start;
@@ -404,7 +404,7 @@
 }
 
 /* ==== media query ===== */
-@media (width <= 767px) {
+@media (width <= 767.98px) {
     .counter2-section h2 {
         font-size: 22px;
         margin-bottom: 6px;

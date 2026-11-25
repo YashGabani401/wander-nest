@@ -139,7 +139,6 @@ html,
 body {
     width: 100%;
 }
-
                     /* ===== classes ===== */
 /* ===== button ===== */
 .btn-primary {
@@ -198,7 +197,7 @@ header.sticky-top {
 }
 
 /* ==== media query ===== */
-@media (width <= 767px) {
+@media (width <= 767.98px) {
     header .logo {
         width: 35px;
         height: 35px;
@@ -296,7 +295,7 @@ footer ul {
 }
 
 /* ===== media query ===== */
-@media (width <= 767px) {
+@media (width <= 767.98px) {
     footer img {
         height: 30px;
         width: 30px;

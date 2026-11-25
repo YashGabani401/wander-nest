@@ -34,7 +34,7 @@ a:hover {
 }
 
 /* ===== media query ===== */
-@media (width <= 767px) {
+@media (width <= 767.98px) {
     .contact-section h1 {
         font-size: 24px;
         margin-bottom: 6px;
@@ -74,7 +74,7 @@ a:hover {
 }
 
 /* ==== media query ===== */
-@media (width <= 767px) {
+@media (width <= 767.98px) {
     .address-card .main-icon {
         font-size: 25px !important;
     }

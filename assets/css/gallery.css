@@ -59,7 +59,7 @@
 }
 
 /* ==== media query ===== */
-@media (width <= 767px) {
+@media (width <= 767.98px) {
     .gallery-section h1 {
       font-size: 24px;
       margin-bottom: 6px !important;

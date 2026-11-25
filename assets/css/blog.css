@@ -53,7 +53,7 @@ input {
 }
 
 /* ===== media query ===== */
-@media (width <= 767px) {
+@media (width <= 767.98px) {
     .blog-section h1 {
         font-size: 24px;
         margin-bottom: 6px !important;
@@ -114,9 +114,25 @@ input {
     color: #ffffff;
 }
 
-/* ==== media query ===== */
-@media (width <= 767px) {
+                    /* ==== media query ===== */
+/* ===== mobile ===== */
+@media (width <= 767.98px) {
     .widget-section p {
         margin-bottom: 6px;
+    }
+}
+
+@media (575.98px <= width <= 767.98px) {
+    .widget-section .insta-image {
+        width: 100px !important;
+        height: 100px !important;
+    }
+}
+
+/* ===== tablet ===== */
+@media (767.98px <= width <= 991.98px) {
+    .widget-section .insta-image {
+        width: 150px !important;
+        height: 150px !important;
     }
 }

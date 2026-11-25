@@ -94,7 +94,7 @@
 }
 
 /* ===== media query ===== */
-@media (width <= 767px) {
+@media (width <= 767.98px) {
     .hero-section h1 {
         font-size: 24px;
         margin-bottom: 11px;
@@ -156,7 +156,7 @@
 }
 
 /* ===== media query ===== */
-@media (width <= 767px) {
+@media (width <= 767.98px) {
     .about-section h2 {
         font-size: 20px;
     }
@@ -232,7 +232,7 @@
 }
 
 /* ===== media query ===== */
-@media (width <= 767px) {
+@media (width <= 767.98px) {
     .dest-section {
         padding: 24px 0 !important;
     }
@@ -261,7 +261,7 @@
 
 /* ===== package section ===== */
 /* ==== media query ===== */
-@media (width <= 767px) {
+@media (width <= 767.98px) {
     .package-section {
         padding: 24px 0 !important;
     }
@@ -329,7 +329,7 @@
 }
 
 /* ==== media query ===== */
-@media (width <= 767px) {
+@media (width <= 767.98px) {
     .counter-section {
         padding: 12px 0 !important;
     }
@@ -374,7 +374,7 @@
 }
 
 /* ==== media query ===== */
-@media (width <= 767px) {
+@media (width <= 767.98px) {
     .testimonial-section {
         padding: 24px 0 !important;
     }
@@ -420,8 +420,12 @@
 }
 
 /* ===== newsletter section ===== */
+.newsletter-section input {
+    height: 30px;
+}
+
 /* ===== media query ===== */
-@media (width <= 767px) {
+@media (width <= 767.98px) {
     .newsletter-section h2 {
         font-size: 20px;
         margin-bottom: 6px;
